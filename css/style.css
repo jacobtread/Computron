@@ -14,6 +14,7 @@ body {
   width: 100%;
   padding-top: 4em;
   border-bottom: 0.5em solid #3569d9;
+  box-shadow: 10px 0 5px black;
 }
 .header__content {
   text-align: center;
@@ -70,13 +71,24 @@ body {
 
 .heading {
   display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 64em;
   margin: 4em auto;
+  justify-content: center;
+}
+.heading__image {
+  flex: 0 0;
+  max-height: 320px;
+  width: 100%;
 }
 .heading__content {
+  flex: 1 1 auto;
   margin: 1em 1em 1em 2em;
   padding: 1em;
+  max-width: 600px;
+  align-self: center;
 }
 .heading__content__title {
   color: #222;

@@ -39,7 +39,7 @@
     .fil19 {fill:#C9C3C3}
     .fil14 {fill:#D6D3D3}
     .fil8 {fill:#DBDBDB}
-    .fil0 {fill:white}
+    .fil0 {fill:none}
     .fil5 {fill:silver;fill-rule:nonzero}
     .fil4 {fill:#D6D3D3;fill-rule:nonzero}
   </style
