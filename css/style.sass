@@ -1,0 +1,104 @@
+$primary: #3569d9
+$background: #1a1d2d
+
+$text-title: #222
+$text-body: #333
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  // System font stack
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif
+
+body
+  background: white
+
+.header
+  background: $background
+  width: 100%
+  padding-top: 4em
+  border-bottom: 0.5em solid $primary
+
+  &__content
+    text-align: center
+
+    &__logo
+      width: 100%
+      max-width: 500px
+      height: auto
+      margin: 0 auto
+
+    &__sub-title
+      display: block
+      color: #b4b4b4
+      margin: 1em 0
+
+  &__nav
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 2em
+
+    &__item
+      position: relative
+      color: gray
+      text-decoration: none
+      text-transform: uppercase
+      font-weight: bold
+      padding: 1em
+      overflow: hidden
+
+      &::before
+        content: ''
+        position: absolute
+        background-color: transparentize($primary, 0.7)
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        transform: translateY(100%)
+        transition: transform 0.3s ease
+        z-index: 0
+
+      &:hover
+        color: white
+
+      &:not([data-selected])
+        &:hover::before
+          transform: translateY(0)
+
+
+
+      &[data-selected]
+        color: white
+        background-color: $primary
+
+.heading
+  display: flex
+  width: 100%
+  max-width: 64em
+  margin: 4em auto
+
+  &__content
+    margin: 1em 1em 1em 2em
+    padding: 1em
+
+    &__title
+      color: $text-title
+      margin-bottom: 0.25em
+
+    &__separator
+      display: block
+      width: 100%
+      height: 0.2em
+      max-width: 70px
+      background-color: $primary
+      margin-bottom: 1em
+
+    &__body
+      color: $text-body
+
+      line-height: 1.45
+      font-size: 1.1em
