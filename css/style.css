@@ -13,8 +13,7 @@ body {
   background: #1a1d2d;
   width: 100%;
   padding-top: 4em;
-  border-bottom: 0.5em solid #3569d9;
-  box-shadow: 10px 0 5px black;
+  border-bottom: 0.5em solid #507edb;
 }
 .header__content {
   text-align: center;
@@ -30,14 +29,15 @@ body {
   color: #b4b4b4;
   margin: 1em 0;
 }
-.header__nav {
+
+.nav {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2em;
 }
-.header__nav__item {
+.nav__item {
   position: relative;
   color: gray;
   text-decoration: none;
@@ -45,28 +45,30 @@ body {
   font-weight: bold;
   padding: 1em;
   overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
 }
-.header__nav__item::before {
+.nav__item::before {
   content: "";
   position: absolute;
-  background-color: rgba(53, 105, 217, 0.3);
+  background-color: rgba(80, 126, 219, 0.3);
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
   transition: transform 0.3s ease;
-  z-index: 0;
+  z-index: -1;
 }
-.header__nav__item:hover {
+.nav__item:hover {
   color: white;
 }
-.header__nav__item:not([data-selected]):hover::before {
+.nav__item:not([data-selected]):hover::before {
   transform: translateY(0);
 }
-.header__nav__item[data-selected] {
+.nav__item[data-selected] {
   color: white;
-  background-color: #3569d9;
+  background-color: #507edb;
 }
 
 .heading {
@@ -79,12 +81,10 @@ body {
   justify-content: center;
 }
 .heading__image {
-  flex: 0 0;
   max-height: 320px;
-  width: 100%;
+  width: auto;
 }
 .heading__content {
-  flex: 1 1 auto;
   margin: 1em 1em 1em 2em;
   padding: 1em;
   max-width: 600px;
@@ -99,7 +99,7 @@ body {
   width: 100%;
   height: 0.2em;
   max-width: 70px;
-  background-color: #3569d9;
+  background-color: #507edb;
   margin-bottom: 1em;
 }
 .heading__content__body {
