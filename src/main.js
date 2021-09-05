@@ -12,8 +12,9 @@ const routes = [
     { path: '/support', component: EmptyPage },
 ]
 
+
 const router = VueRouter.createRouter({
-    history: process.env.NODE_ENV === 'production' ? VueRouter.createWebHistory() : VueRouter.createWebHashHistory(),
+    history: process.env.NODE_ENV === 'production' ? VueRouter.createWebHistory('/Computron') : VueRouter.createWebHashHistory(),
     routes,
 });
 
