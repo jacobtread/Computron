@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Computron.iml" filepath="$PROJECT_DIR$/.idea/Computron.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/computron.iml" filepath="$PROJECT_DIR$/.idea/computron.iml" />
     </modules>
   </component>
 </project>

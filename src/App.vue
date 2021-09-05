@@ -1,0 +1,38 @@
+<template>
+  <Header/>
+  <main class="content">
+    <router-view></router-view>
+  </main>
+  <Footer/>
+</template>
+
+<script>
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
+<style lang="sass">
+
+@import "./assets/reset.css"
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Roboto", Roboto, Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.content
+  padding: 35vh 0
+
+</style>
