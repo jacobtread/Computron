@@ -9,7 +9,7 @@
         <slot name="buttons"/>
       </div>
     </div>
-    <img class="block__image" :src="require(`../assets/${icon}`)" :alt="iconName">
+    <img class="block__image" :src="require(`../assets/${icon}`)" :alt="iconName" width="16" height="16">
   </div>
 </template>
 
@@ -50,6 +50,8 @@ export default {
 
   &__image
     max-height: 200px
+    width: auto
+    height: auto
 
   h1
     display: inline-block
