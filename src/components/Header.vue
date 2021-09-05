@@ -84,7 +84,7 @@ nav
       color: white
       transition: background-color 0.5s ease, color 0.2s ease
 
-@media all and (max-width: 1100px)
+@media screen and (max-width: 1150px)
   header
     flex-flow: column
     text-align: center

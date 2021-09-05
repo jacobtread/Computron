@@ -13,7 +13,7 @@ const routes = [
 ]
 
 const router = VueRouter.createRouter({
-    history: VueRouter.createWebHashHistory(),
+    history: process.env.NODE_ENV === 'production' ? VueRouter.createWebHistory() : VueRouter.createWebHashHistory(),
     routes,
 });
 
