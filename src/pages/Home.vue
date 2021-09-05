@@ -49,8 +49,8 @@
 </template>
 
 <script>
-import TextBlock from "./TextBlock";
-import IconBlock from "./IconBlock";
+import TextBlock from "../components/TextBlock";
+import IconBlock from "../components/IconBlock";
 
 export default {
   name: "Home",

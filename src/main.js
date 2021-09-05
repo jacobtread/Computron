@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import * as VueRouter from 'vue-router'
-import Home from "./components/Home";
+import Home from "./pages/Home";
 
 const EmptyPage = {template: '<h1>No Content</h1>'}
 
