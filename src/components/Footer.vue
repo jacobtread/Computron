@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div class="contact">
-      <h4>Contact</h4>
+      <h3>Contact</h3>
       <div class="contact__info">
-        <h3>Josh</h3>
+        <h4>Josh</h4>
         <p><span>Email</span>josh@computron.co.nz</p>
       </div>
       <p>Website Designed by Jacob Read</p>
@@ -46,14 +46,14 @@ footer
 
 .contact
 
-  h4
+  h3
     color: white
     font-weight: normal
 
   &__info
     margin-top: 1em
 
-    h3
+    h4
       color: #BDBDBD
       margin-bottom: 0.5em
       font-weight: normal

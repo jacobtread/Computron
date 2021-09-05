@@ -1,7 +1,7 @@
 <template>
   <header>
     <div>
-      <img class="logo" src="../assets/logo.svg" alt="Computron Logo" title="Computron">
+      <img class="logo" src="../assets/logo.svg" alt="Computron Logo" title="Computron" width="16" height="16">
       <p class="logo__subtext">Computer/Networking Repairs & Application Training</p>
     </div>
     <nav>
@@ -47,6 +47,7 @@ header
 .logo
   max-width: 400px
   width: 50vw
+  height: auto
 
   &__subtext
     color: #B4B4B4
