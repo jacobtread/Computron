@@ -1,0 +1,27 @@
+@import "variables"
+
+a.button
+  text-decoration: none
+
+button.button
+  border: none
+
+.button
+  text-transform: uppercase
+  font-weight: bold
+  letter-spacing: 0.1em
+  padding: 1em 2em
+  border-radius: 0.2em
+
+  color: $button-text-default
+  background-color: $button-background-default
+
+  transition: background-color 0.2s ease, color 0.2s ease
+
+  &:hover:not(.router-link-exact-active)
+    background-color: $button-background-hover
+
+  &:is(.router-link-exact-active)
+    color: $button-text-active
+    background-color: $button-background-active
+    transition: background-color 0.5s ease, color 0.2s ease

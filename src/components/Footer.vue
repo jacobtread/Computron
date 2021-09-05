@@ -24,6 +24,8 @@ export default {
 @import "../assets/variables"
 
 footer
+  margin-top: 25vh
+
   display: flex
   flex-flow: row
 

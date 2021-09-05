@@ -21,8 +21,9 @@ export default {
 
 <style lang="sass">
 
-@import "./assets/reset.css"
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+@import "./assets/reset.css"
+@import "./assets/global"
 
 *
   margin: 0
@@ -32,7 +33,5 @@ export default {
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-.content
-  padding: 35vh 0
 
 </style>

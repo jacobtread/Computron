@@ -5,19 +5,19 @@
       <p class="logo__subtext">Computer/Networking Repairs & Application Training</p>
     </div>
     <nav>
-      <router-link to="/">
+      <router-link to="/" class="button">
         Home
       </router-link>
-      <router-link to="/contact">
+      <router-link to="/contact" class="button">
         Contact
       </router-link>
-      <router-link to="/downloads">
+      <router-link to="/downloads" class="button">
         Downloads
       </router-link>
-      <router-link to="/tutorials">
+      <router-link to="/tutorials" class="button">
         Tutorials
       </router-link>
-      <router-link to="/support">
+      <router-link to="/support" class="button">
         Remote Support
       </router-link>
     </nav>
@@ -42,6 +42,7 @@ header
   padding: 2em 4em
 
   background-color: $background
+  margin-bottom: 15vh
 
 .logo
   max-width: 400px
@@ -63,26 +64,9 @@ nav
   justify-content: flex-end
 
   // Navigation Buttons
-  a
+  .button
     padding: 0.75em
     border-radius: 0.1em
-
-    color: #9F9F9F
-    text-transform: uppercase
-    text-decoration: none
-    font-weight: bold
-
-    background-color: $button-background-default
-
-    transition: background-color 0.2s ease, color 0.2s ease
-
-    &:hover:not(.router-link-exact-active)
-      background-color: $button-background-hover
-
-    &:is(.router-link-exact-active)
-      background-color: $button-background-active
-      color: white
-      transition: background-color 0.5s ease, color 0.2s ease
 
 @media screen and (max-width: 1150px)
   header

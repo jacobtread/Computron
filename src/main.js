@@ -1,11 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import * as VueRouter from 'vue-router'
+import Home from "./components/Home";
 
 const EmptyPage = {template: '<h1>No Content</h1>'}
 
 const routes = [
-    { path: '/', component: EmptyPage },
+    { path: '/', component: Home },
     { path: '/contact', component: EmptyPage },
     { path: '/downloads', component: EmptyPage },
     { path: '/tutorials', component: EmptyPage },
@@ -14,7 +15,10 @@ const routes = [
 
 
 const router = VueRouter.createRouter({
-    history: process.env.NODE_ENV === 'production' ? VueRouter.createWebHistory('/Computron') : VueRouter.createWebHashHistory(),
+    history:
+        process.env.NODE_ENV === 'production' ?
+            VueRouter.createWebHistory('/Computron')
+        : VueRouter.createWebHashHistory(),
     routes,
 });
 
