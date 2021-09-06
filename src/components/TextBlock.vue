@@ -1,12 +1,15 @@
 <!-- This p-->
 <template>
-  <div class="block" v-bind:class="{ 'block--centered': centered }">
+  <div class="block">
     <h1>{{ title }}</h1>
     <p>
       <slot/>
     </p>
     <div class="buttons">
       <slot name="buttons"/>
+    </div>
+    <div class="extra">
+      <slot name="extra"/>
     </div>
   </div>
 </template>
@@ -16,7 +19,6 @@ export default {
   name: "TextBlock",
   props: {
     title: String,
-    centered: Boolean
   }
 }
 </script>
@@ -28,12 +30,7 @@ export default {
   display: block
   width: 100%
   padding: 0 1em
-
-  &--centered
-    text-align: center
-
-    .buttons
-      justify-content: center
+  text-align: center
 
   h1
     display: inline-block
@@ -61,14 +58,12 @@ export default {
   flex-flow: row
   flex-wrap: wrap
   margin-top: 1em
+  justify-content: center
 
   .button
     display: inline-block
 
-@media screen and (max-width: 700px)
-  .block
-    flex-flow: column-reverse
-    text-align: center
-  .buttons
-    justify-content: center
+.extra
+  display: block
+  text-align: center
 </style>

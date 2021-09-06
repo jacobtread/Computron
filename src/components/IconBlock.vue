@@ -37,13 +37,6 @@ export default {
   width: 100%
   padding: 0 1em
 
-  &--reversed
-    flex-flow: row-reverse
-    text-align: right
-
-    .buttons
-      justify-content: flex-end
-
   &__text
     flex: 1 1 auto
     max-width: 500px
@@ -71,6 +64,18 @@ export default {
   p
     line-height: 1.5
 
+  &--reversed
+    flex-flow: row-reverse
+    text-align: right
+
+    h1::before
+      left: auto
+      right: 0
+
+    .buttons
+      justify-content: flex-end
+
+
 .buttons
   display: flex
   flex-flow: row
@@ -88,6 +93,12 @@ export default {
     &--reversed
       .buttons
       justify-content: center
+
+    h1::before
+      left: 50%
+      right: auto
+      transform: translateX(-50%)
+
   .buttons
     justify-content: center
 

@@ -62,14 +62,5 @@ export default {
 </script>
 
 <style scoped lang="sass">
-.blocks
-  display: grid
-  width: 100%
-  max-width: 900px
-  grid-gap: 6em
-  margin: 5em auto
 
-@media screen and (max-width: 1150px)
-  .blocks
-    max-width: 700px
 </style>
