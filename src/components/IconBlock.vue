@@ -84,9 +84,10 @@ export default {
   .block
     flex-flow: column-reverse
     text-align: center
+
     &--reversed
       .buttons
-        justify-content: center
+      justify-content: center
   .buttons
     justify-content: center
 
