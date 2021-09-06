@@ -2,6 +2,7 @@ import {createApp} from 'vue'
 import App from './App.vue'
 import {createRouter, createWebHistory, createWebHashHistory} from 'vue-router'
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 // A Constants that represents an empty page
 const EmptyPage = {template: '<h1>No Content</h1>'}
@@ -16,7 +17,7 @@ const EmptyPage = {template: '<h1>No Content</h1>'}
 */
 const routes = [
     { path: '/', component: Home },
-    { path: '/contact', component: EmptyPage },
+    { path: '/contact', component: Contact },
     { path: '/downloads', component: EmptyPage },
     { path: '/tutorials', component: EmptyPage },
     { path: '/support', component: EmptyPage },
