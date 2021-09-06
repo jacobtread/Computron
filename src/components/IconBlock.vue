@@ -9,7 +9,7 @@
         <slot name="buttons"/>
       </div>
     </div>
-    <img class="block__image" :src="require(`../assets/${icon}`)" :alt="iconName" width="16" height="16">
+    <img class="block__image" :src="require(`../assets/img/${icon}`)" :alt="iconName" width="16" height="16">
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
-@import "../assets/variables"
+@import "../assets/css/variables"
 
 .block
   display: flex

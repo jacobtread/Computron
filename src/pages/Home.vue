@@ -1,6 +1,6 @@
 <template>
   <div class="blocks">
-    <TextBlock title="Welcome to Computron" centered>
+    <TextBlock title="Welcome to Computron">
       <b>Computron</b> is a place where you can find all the tools you need and even some you don't. Here we provide you
       with links to lots of useful software however we also provide in-person services, training, and repairs to machine
       networking and other hardware. You can find useful information by navigating through the menus in the navigation

@@ -1,6 +1,5 @@
-<!-- This p-->
 <template>
-  <div class="block">
+  <div class="block" v-bind:class="{ 'block--numbered': numbered }">
     <h1>{{ title }}</h1>
     <p>
       <slot/>
@@ -19,18 +18,20 @@ export default {
   name: "TextBlock",
   props: {
     title: String,
+    numbered: Boolean
   }
 }
 </script>
 
 <style scoped lang="sass">
-@import "../assets/variables"
+@import "../assets/css/variables"
 
 .block
   display: block
   width: 100%
   padding: 0 1em
   text-align: center
+
 
   h1
     display: inline-block
@@ -48,6 +49,12 @@ export default {
       transform: translateX(-50%)
       background-color: $primary
 
+  &--numbered
+    h1
+      font-size: 4em
+
+      &::before
+        width: 150%
   p
     line-height: 1.5
     max-width: 600px
@@ -66,4 +73,9 @@ export default {
 .extra
   display: block
   text-align: center
+
+  ::v-deep a
+    display: block
+    color: #343534
+    margin-top: 1.5em
 </style>

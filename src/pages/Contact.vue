@@ -1,6 +1,6 @@
 <template>
   <div class="blocks">
-    <TextBlock title="Get in contact" centered>
+    <TextBlock title="Get in contact">
       <template v-slot:default>
         You can get in touch with us via email to arrange a meeting to either learn more about Computron Or you can just
         email us about any concerns, interests or issues you have with Computron we will get back to you as soon as
@@ -45,11 +45,6 @@ export default {
 
 <style scoped lang="sass">
 
-.email
-  display: block
-  color: #343534
-  margin-top: 1.5em
-  cursor: pointer
 
 .email-button
   padding: 1em 4em

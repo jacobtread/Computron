@@ -3,6 +3,7 @@ import App from './App.vue'
 import {createRouter, createWebHistory, createWebHashHistory} from 'vue-router'
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Support from "./pages/Support";
 
 // A Constants that represents an empty page
 const EmptyPage = {template: '<h1>No Content</h1>'}
@@ -20,7 +21,7 @@ const routes = [
     { path: '/contact', component: Contact },
     { path: '/downloads', component: EmptyPage },
     { path: '/tutorials', component: EmptyPage },
-    { path: '/support', component: EmptyPage },
+    { path: '/support', component: Support },
 ]
 
 // Create a new VueJS router this comes from the vue-router library
@@ -41,6 +42,9 @@ const router = createRouter({
         : createWebHashHistory(),
     routes /* Passing the routes to the createRouter function */,
 });
+
+// Reset the page scroll after they change pages
+router.afterEach(() => document.body.scrollTop = document.documentElement.scrollTop = 0)
 
 const app = createApp(App); // Create a new VueJS application
 app.use(router); // Tell the vue app to use the router

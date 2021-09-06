@@ -1,7 +1,7 @@
 <template>
   <header>
     <div>
-      <img class="logo" src="../assets/logo.svg" alt="Computron Logo" title="Computron" width="16" height="16">
+      <img class="logo" src="../assets/img/logo.svg" alt="Computron Logo" title="Computron" width="16" height="16">
       <p class="logo__subtext">Computer/Networking Repairs & Application Training</p>
     </div>
     <nav>
@@ -22,7 +22,7 @@ export default {
 
 <style scoped lang="sass">
 
-@import "../assets/variables"
+@import "../assets/css/variables"
 
 header
   display: flex

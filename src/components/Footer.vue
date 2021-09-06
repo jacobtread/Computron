@@ -9,7 +9,7 @@
       <p>Website Designed by Jacob Read</p>
     </div>
     <div class="logo-block">
-      <img class="logo" src="../assets/logo.svg" alt="Computron Logo" title="Computron" width="16" height="16">
+      <img class="logo" src="../assets/img/logo.svg" alt="Computron Logo" title="Computron" width="16" height="16">
     </div>
   </footer>
 </template>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
-@import "../assets/variables"
+@import "../assets/css/variables"
 
 footer
   margin-top: 25vh
