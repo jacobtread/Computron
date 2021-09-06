@@ -92,7 +92,7 @@ export default {
 
     &--reversed
       .buttons
-      justify-content: center
+        justify-content: center
 
     h1::before
       left: 50%
