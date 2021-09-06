@@ -4,6 +4,9 @@
     <p>
       <slot/>
     </p>
+    <div class="buttons">
+      <slot name="buttons"/>
+    </div>
   </div>
 </template>
 
@@ -27,6 +30,8 @@ export default {
 
     &--centered
       text-align: center
+      .buttons
+        justify-content: center
 
     h1
       display: inline-block
@@ -48,5 +53,19 @@ export default {
       line-height: 1.5
       max-width: 600px
       margin: 0 auto
+  .buttons
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+    margin-top: 1em
 
+    .button
+      display: inline-block
+
+  @media screen and (max-width: 700px)
+    .block
+      flex-flow: column-reverse
+      text-align: center
+    .buttons
+      justify-content: center
 </style>

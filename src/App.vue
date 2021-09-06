@@ -1,7 +1,11 @@
 <template>
   <Header/>
   <main class="content">
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
   <Footer/>
 </template>
@@ -33,5 +37,14 @@ export default {
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+.fade-enter-active,
+.fade-leave-active
+  transition: transform 0.2s ease
+  transform: translateX(0)
+
+
+.fade-enter-from,
+.fade-leave-to
+  transform: translateX(-25px)
 
 </style>
