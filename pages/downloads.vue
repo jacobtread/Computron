@@ -14,15 +14,19 @@
     </nav>
     <div class="blocks">
       <div v-for="(category, index) in categories" :key="index" :id="category.id">
-        <h1>{{ category.title }}</h1>
-        <TextBlock v-for="(item, index) in category.children" :key="index" :title="item.name">
-          {{ item.description }}
-          <template v-slot:buttons>
-            <a :href="item.link" rel="noreferrer" target="_blank" class="button">
-              View Download
-            </a>
-          </template>
-        </TextBlock>
+        <div class="title__wrapper">
+          <h1 class="title">{{ category.title }}</h1>
+        </div>
+        <div class="blocks padded">
+          <TextBlock v-for="(item, index) in category.children" :key="index" :title="item.name">
+            {{ item.description }}
+            <template v-slot:buttons>
+              <a :href="item.link" rel="noreferrer" target="_blank" class="button">
+                View Download
+              </a>
+            </template>
+          </TextBlock>
+        </div>
       </div>
     </div>
     <button class="button--top button" v-on:click="scrollTo('header')">Back to top ^</button>
@@ -61,6 +65,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
+@import "../assets/css/variables"
 
 .nav
   display: flex
@@ -69,6 +74,28 @@ export default {
 
   ::v-deep .button
     margin: 0 1em
+
+.padded
+  grid-gap: 3em
+
+.title
+  position: relative
+  display: inline-block
+  text-align: center
+
+  &__wrapper
+    display: block
+    text-align: center
+
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 120%
+    width: 80%
+    height: 4px
+    background-color: $primary
 
 .button--top
   position: fixed
