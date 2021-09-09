@@ -33,14 +33,4 @@ h1, h3, h4, h5, h6, input, button, p, span, a
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-.fade-enter-active,
-.fade-leave-active
-  transition: transform 0.2s ease
-  transform: translateX(0)
-
-
-.fade-enter-from,
-.fade-leave-to
-  transform: translateX(-25px)
-
 </style>
