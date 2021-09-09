@@ -40,8 +40,9 @@ footer
   justify-content: flex-end
 
 .logo
+  align-self: center
   width: 100%
-  height: auto
+  height: 70px
   max-width: 300px
 
 .contact

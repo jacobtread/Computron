@@ -12,19 +12,22 @@ button.button
   letter-spacing: 0.1em
   padding: 1em 2em
   border-radius: 0.2em
+  cursor: pointer
 
   color: $button-text-default
   background-color: $button-background-default
-
   transition: background-color 0.2s ease, color 0.2s ease
 
-  &:hover:not(.nuxt-link-exact-active)
+  &:hover
     background-color: $button-background-hover
 
-  &:is(.nuxt-link-exact-active)
-    color: $button-text-active
+.nuxt-link-exact-active.button:not(.ignore-active)
+  transition: background-color 0.5s ease, color 0.2s ease
+  background-color: $button-background-active
+  color: $button-text-active
+
+  &:hover
     background-color: $button-background-active
-    transition: background-color 0.5s ease, color 0.2s ease
 
 .blocks
   display: grid

@@ -36,5 +36,6 @@ export default {
   ],
   router: {
     base: '/Computron/'
-  }
+  },
+  modules: ['@nuxt/content'],
 }

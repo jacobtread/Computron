@@ -1,0 +1,56 @@
+{
+  "categories": [
+    {
+      "id": "os",
+      "title": "Operating Systems",
+      "children": [
+        {
+          "name": "Windows 10",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://www.microsoft.com/en-us/software-download/windows10"
+        },
+        {
+          "name": "Ubuntu Workstation Linux",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://ubuntu.com/download/desktop"
+        },
+        {
+          "name": "Ubuntu Server Linux",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://ubuntu.com/download/server"
+        },
+        {
+          "name": "Noobs Raspberry PI",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://www.raspberrypi.org/downloads/noobs/"
+        },
+        {
+          "name": "Raspbian Raspberry PI",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://www.raspberrypi.org/downloads/raspbian/"
+        }
+      ]
+    },
+    {
+      "id": "browsers",
+      "title": "Browsers",
+      "children": [
+        {
+          "name": "Chrome",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://www.google.com/chrome/"
+        },
+        {
+          "name": "Firefox",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://www.mozilla.org/en-US/firefox/new/"
+        },
+        {
+          "name": "Opera",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "link": "https://www.opera.com/"
+        }
+      ]
+    }
+  ]
+}

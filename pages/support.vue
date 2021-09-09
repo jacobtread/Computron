@@ -6,15 +6,15 @@
       help
     </TextBlock>
     <TextBlock title="1" numbered centered>
-      <template v-slot:default>
+      <template>
         Firstly you will need to download the TeamViewer software which can be found by clicking the button below or the
         link underneath it. Visiting this page should automatically select the right operating system for your device
         but if it does not please select your operating system from the list at the top
       </template>
-      <template v-slot:buttons>
+      <template #buttons>
         <a class="button" href="https://www.teamviewer.com/en-us/download" rel="noreferrer">Download</a>
       </template>
-      <template v-slot:extra>
+      <template #extra>
         <a href="https://www.teamviewer.com/en-us/download"
            rel="noreferrer">https://www.teamviewer.com/en-us/download</a>
       </template>

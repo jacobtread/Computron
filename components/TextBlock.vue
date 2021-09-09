@@ -57,7 +57,6 @@ export default {
 
   p
     line-height: 1.5
-    max-width: 600px
 
   &--centered
     text-align: center
@@ -69,12 +68,14 @@ export default {
 
     p
       margin: 0 auto
+      max-width: 600px
 
     .buttons
       justify-content: center
 
     .extra
       text-align: center
+
 .buttons
   display: flex
   flex-flow: row

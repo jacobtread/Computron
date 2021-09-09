@@ -9,11 +9,11 @@
     </TextBlock>
 
     <IconBlock title="Downloads" icon="download.svg" icon-name="Download Icon">
-      <template v-slot:default>
+      <template>
         We have a large selection of free and powerful software from everyday helpful tools to ISO images for installing
         operating systems we’ve got downloads for everything all in one place
       </template>
-      <template v-slot:buttons>
+      <template #buttons>
         <NuxtLink to="/downloads" class="button">
           View Downloads
         </NuxtLink>
@@ -21,11 +21,11 @@
     </IconBlock>
 
     <IconBlock title="Tutorials" icon="tutorials.svg" icon-name="Tutorials Icon" reversed>
-      <template v-slot:default>
+      <template>
         On the tutorials page of our website you will find helpful tutorials to setup certain software and get the best
         out of your computer and the software that you are running on it
       </template>
-      <template v-slot:buttons>
+      <template #buttons>
         <NuxtLink to="/tutorials" class="button">
           View Tutorials
         </NuxtLink>
@@ -33,12 +33,12 @@
     </IconBlock>
 
     <IconBlock title="Remote Support" icon="support.svg" icon-name="Support Icon">
-      <template v-slot:default>
+      <template>
         We have an easy to use tutorial to help you get setup before we help you remotely this tutorial is intended to
         be
         followed before contacting us in order to help speed up the process of us helping you
       </template>
-      <template v-slot:buttons>
+      <template #buttons>
         <NuxtLink to="/support" class="button">
           Get Support
         </NuxtLink>
