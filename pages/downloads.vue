@@ -74,8 +74,11 @@ export default {
 
   justify-content: center
 
+  max-width: 1200px
+  margin: 0 auto
+
   ::v-deep .button
-    margin: 0 1em
+    margin: 0.5em 1em
 
 .padded
   grid-gap: 3em
