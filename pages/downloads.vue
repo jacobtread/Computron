@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <button class="button--top button" v-on:click="scrollTo('header')">Back to top ^</button>
+    <button class="button--top button" id="topButton" v-on:click="scrollTo('header')">Back to top ^</button>
   </div>
 </template>
 
@@ -58,10 +58,20 @@ export default {
         this.scrollTo('#' + element.getAttribute('data-category'))
       }
     }
+
+    const updateTopButton = function () {
+      if(document.documentElement.scrollTop > 300) {
+        topButton.classList.add('button--top--active')
+      } else {
+        topButton.classList.remove('button--top--active')
+      }
+    }
+
+    const topButton = document.getElementById('topButton')
+    document.addEventListener('scroll', updateTopButton);
+    updateTopButton();
   }
 }
-
-
 </script>
 
 <style scoped lang="sass">
@@ -104,9 +114,13 @@ export default {
 
 .button--top
   position: fixed
-  top: 0
-  right: 0
+  bottom: 2em
+  right: 2em
   z-index: 0
   cursor: pointer
+  display: none
+
+  &--active
+    display: inline-block
 
 </style>
