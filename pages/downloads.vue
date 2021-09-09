@@ -8,8 +8,8 @@
       <button v-for="(category, index) in categories"
               :key="index"
               class="button ignore-active"
-              :data-category="category.id"
-      >{{ category.title }}
+              :data-category="category.id">
+        {{ category.title }}
       </button>
     </nav>
     <div class="blocks">

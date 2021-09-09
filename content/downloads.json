@@ -159,11 +159,6 @@
           "name": "Foxit Reader",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
           "link": "https://www.foxitsoftware.com/pdf-reader/"
-        },
-        {
-          "name": "CCleaner",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
-          "link": "https://www.ccleaner.com/ccleaner/download"
         }
       ]
     },
