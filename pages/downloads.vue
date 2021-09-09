@@ -62,6 +62,14 @@ export default {
 
 <style scoped lang="sass">
 
+.nav
+  display: flex
+  flex-flow: row
+  justify-content: center
+
+  ::v-deep .button
+    margin: 0 1em
+
 .button--top
   position: fixed
   top: 0
