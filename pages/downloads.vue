@@ -70,6 +70,8 @@ export default {
 .nav
   display: flex
   flex-flow: row
+  flex-wrap: wrap
+
   justify-content: center
 
   ::v-deep .button
