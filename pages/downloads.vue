@@ -33,7 +33,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import TextBlock from "../components/TextBlock";
 
 export default {
@@ -51,9 +51,9 @@ export default {
     }
   },
   mounted() {
-    const elements: NodeListOf = document.querySelectorAll('.nav > *');
+    const elements = document.querySelectorAll('.nav > *');
     for (let i = 0; i < elements.length; i++) {
-      const element: HTMLElement = elements[i];
+      const element = elements[i];
       element.onclick = () => {
         this.scrollTo('#' + element.getAttribute('data-category'))
       }
