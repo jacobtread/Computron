@@ -37,9 +37,10 @@ header
 .logo
   max-width: 400px
   width: 50vw
-  height: auto
+  height: 70px
 
   &__subtext
+    text-align: center
     color: #B4B4B4
     font-size: 0.8em
     margin-top: 1em
