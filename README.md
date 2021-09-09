@@ -1,6 +1,6 @@
 # Computron
 
-[![GitHub Pages](https://github.com/jacobtread/Computron/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/jacobtread/Computron/actions/workflows/gh-pages.yml)
+[![GitHub Pages](https://github.com/jacobtread/Computron/actions/workflows/deploy.yml/badge.svg)](https://github.com/jacobtread/Computron/actions/workflows/deploy.yml)
 ![VueJS](https://img.shields.io/badge/Powered%20By-NuxtJS-68A063?style=for-the-badge)
 ![LINES OF CODE](https://img.shields.io/tokei/lines/github/jacobtread/Computron?style=for-the-badge)
 ![LICENSE](https://img.shields.io/github/license/jacobtread/Computron?style=for-the-badge)
