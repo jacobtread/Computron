@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     scrollTo(tag) {
-      document.querySelector(tag).scrollIntoView();
+      document.querySelector(tag).scrollIntoView({behavior: 'smooth'});
     }
   },
   mounted() {
@@ -118,9 +118,13 @@ export default {
   right: 2em
   z-index: 0
   cursor: pointer
-  display: none
+  opacity: 0
+  pointer-events: none
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5)
+  transition: opacity 0.2s ease
 
   &--active
-    display: inline-block
+    opacity: 1
+    pointer-events: auto
 
 </style>
