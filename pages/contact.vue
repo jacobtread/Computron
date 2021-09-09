@@ -1,6 +1,6 @@
 <template>
   <div class="blocks">
-    <TextBlock title="Get in contact">
+    <TextBlock title="Get in contact" centered>
       <template v-slot:default>
         You can get in touch with us via email to arrange a meeting to either learn more about Computron Or you can just
         email us about any concerns, interests or issues you have with Computron we will get back to you as soon as
@@ -21,30 +21,30 @@
         to help speed up the process of us helping you
       </template>
       <template v-slot:buttons>
-        <router-link to="/support" class="button">
+        <NuxtLink to="/support" class="button">
           Get Support
-        </router-link>
+        </NuxtLink>
       </template>
     </IconBlock>
-
   </div>
 </template>
 
-<script>
-import TextBlock from "../components/TextBlock";
-import IconBlock from "../components/IconBlock";
+<script lang="ts">
+
+import IconBlock from "~/components/IconBlock.vue"
+import TextBlock from "~/components/TextBlock.vue"
 
 export default {
-  name: "Contact",
   components: {
     IconBlock,
     TextBlock
   }
 }
+
 </script>
 
-<style scoped lang="sass">
 
+<style scoped lang="sass">
 
 .email-button
   padding: 1em 4em

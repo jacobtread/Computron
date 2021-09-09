@@ -1,6 +1,6 @@
 <template>
   <div class="blocks">
-    <TextBlock title="Welcome to Computron">
+    <TextBlock title="Welcome to Computron" centered>
       <b>Computron</b> is a place where you can find all the tools you need and even some you don't. Here we provide you
       with links to lots of useful software however we also provide in-person services, training, and repairs to machine
       networking and other hardware. You can find useful information by navigating through the menus in the navigation
@@ -14,9 +14,9 @@
         operating systems we’ve got downloads for everything all in one place
       </template>
       <template v-slot:buttons>
-        <router-link to="/downloads" class="button">
+        <NuxtLink to="/downloads" class="button">
           View Downloads
-        </router-link>
+        </NuxtLink>
       </template>
     </IconBlock>
 
@@ -26,9 +26,9 @@
         out of your computer and the software that you are running on it
       </template>
       <template v-slot:buttons>
-        <router-link to="/tutorials" class="button">
+        <NuxtLink to="/tutorials" class="button">
           View Tutorials
-        </router-link>
+        </NuxtLink>
       </template>
     </IconBlock>
 
@@ -39,28 +39,25 @@
         followed before contacting us in order to help speed up the process of us helping you
       </template>
       <template v-slot:buttons>
-        <router-link to="/support" class="button">
+        <NuxtLink to="/support" class="button">
           Get Support
-        </router-link>
+        </NuxtLink>
       </template>
     </IconBlock>
 
   </div>
 </template>
 
-<script>
-import TextBlock from "../components/TextBlock";
-import IconBlock from "../components/IconBlock";
+<script lang="ts">
+
+import IconBlock from "~/components/IconBlock.vue"
+import TextBlock from "~/components/TextBlock.vue"
 
 export default {
-  name: "Home",
   components: {
     IconBlock,
     TextBlock
   }
 }
+
 </script>
-
-<style scoped lang="sass">
-
-</style>

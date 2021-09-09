@@ -5,11 +5,11 @@
       <p class="logo__subtext">Computer/Networking Repairs & Application Training</p>
     </div>
     <nav>
-      <router-link to="/" class="button">Home</router-link>
-      <router-link to="/contact" class="button">Contact</router-link>
-      <router-link to="/downloads" class="button">Downloads</router-link>
-      <router-link to="/tutorials" class="button">Tutorials</router-link>
-      <router-link to="/support" class="button">Remote Support</router-link>
+      <NuxtLink to="/" class="button">Home</NuxtLink>
+      <NuxtLink to="/contact" class="button">Contact</NuxtLink>
+      <NuxtLink to="/downloads" class="button">Downloads</NuxtLink>
+      <NuxtLink to="/tutorials" class="button">Tutorials</NuxtLink>
+      <NuxtLink to="/support" class="button">Remote Support</NuxtLink>
     </nav>
   </header>
 </template>

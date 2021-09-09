@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-bind:class="{ 'block--numbered': numbered }">
+  <div class="block" v-bind:class="{ 'block--numbered': numbered, 'block--centered': centered }">
     <h1>{{ title }}</h1>
     <p>
       <slot/>
@@ -18,7 +18,8 @@ export default {
   name: "TextBlock",
   props: {
     title: String,
-    numbered: Boolean
+    numbered: Boolean,
+    centered: Boolean
   }
 }
 </script>
@@ -30,8 +31,7 @@ export default {
   display: block
   width: 100%
   padding: 0 1em
-  text-align: center
-
+  text-align: left
 
   h1
     display: inline-block
@@ -42,11 +42,10 @@ export default {
     &::before
       content: ''
       position: absolute
-      left: 50%
+      left: 0
       top: 120%
       width: 80%
       height: 4px
-      transform: translateX(-50%)
       background-color: $primary
 
   &--numbered
@@ -55,27 +54,55 @@ export default {
 
       &::before
         width: 150%
+
   p
     line-height: 1.5
     max-width: 600px
-    margin: 0 auto
 
+  &--centered
+    text-align: center
+
+    h1::before
+      left: 50%
+      right: auto
+      transform: translateX(-50%)
+
+    p
+      margin: 0 auto
+
+    .buttons
+      justify-content: center
+
+    .extra
+      text-align: center
 .buttons
   display: flex
   flex-flow: row
   flex-wrap: wrap
   margin-top: 1em
-  justify-content: center
 
   .button
     display: inline-block
 
 .extra
   display: block
-  text-align: center
+  text-align: left
 
   ::v-deep a
     display: block
     color: #343534
     margin-top: 1.5em
+
+@media screen and (max-width: 700px)
+  .block
+    flex-flow: column-reverse
+    text-align: center
+
+    h1::before
+      left: 50%
+      right: auto
+      transform: translateX(-50%)
+
+  .buttons
+    justify-content: center
 </style>
