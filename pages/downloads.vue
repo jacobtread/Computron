@@ -20,7 +20,7 @@
         <div class="blocks padded">
           <TextBlock v-for="(item, index) in category.children" :key="index" :title="item.name">
             {{ item.description }}
-            <template v-slot:buttons>
+            <template #buttons>
               <a :href="item.link" rel="noreferrer" target="_blank" class="button">
                 View Download
               </a>
@@ -39,11 +39,8 @@ import TextBlock from "../components/TextBlock";
 export default {
   components: {TextBlock},
   async asyncData({$content}) {
-    const {categories} = await $content('downloads')
-      .fetch()
-    return {
-      categories
-    }
+    const {categories} = await $content('downloads').fetch() // Retrieve all the categories from downloads.json
+    return {categories} // Give view access to the data
   },
   methods: {
     scrollTo(tag) {
@@ -60,7 +57,7 @@ export default {
     }
 
     const updateTopButton = function () {
-      if(document.documentElement.scrollTop > 300) {
+      if (document.documentElement.scrollTop > 300) {
         topButton.classList.add('button--top--active')
       } else {
         topButton.classList.remove('button--top--active')
@@ -120,7 +117,7 @@ export default {
   cursor: pointer
   opacity: 0
   pointer-events: none
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5)
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
   transition: opacity 0.2s ease
 
   &--active

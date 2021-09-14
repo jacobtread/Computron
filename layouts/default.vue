@@ -26,7 +26,7 @@ export default {
 @import "assets/css/global"
 
 // Apply to all elements with text
-h1, h3, h4, h5, h6, input, button, p, span, a
+h1, h2, h3, h4, h5, h6, input, button, p, span, a
   // Set the font family
   font-family: "Roboto", Roboto, Avenir, Helvetica, Arial, sans-serif
   // Apply font smoothing
