@@ -9,7 +9,7 @@
       <NuxtLink to="/contact" class="button">Contact</NuxtLink>
       <NuxtLink to="/downloads" class="button">Downloads</NuxtLink>
       <NuxtLink to="/tutorials" class="button">Tutorials</NuxtLink>
-      <NuxtLink to="/support" class="button">Remote Support</NuxtLink>
+      <NuxtLink to="/tutorials/support-setup" class="button">Remote Support</NuxtLink>
     </nav>
   </header>
 </template>

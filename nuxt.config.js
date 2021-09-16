@@ -37,5 +37,14 @@ export default {
   router: {
     base: '/Computron/'
   },
+  hooks: {
+    // This hook is run before all the files are parsed by nuxt
+    'content:file:beforeParse' /* The before parse event */: (file /* The current file */) => {
+      if (file.extension !== '.md') return; // Ignore the file if its not of .md type
+      // Regular expression for matching [button](http://exmaple.com "Title")
+      const buttonRegex = /\[button]\((?<url>(ftp|http|https):\/\/(\w+:?\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@\-\/]))?) "(?<text>\w+)"\)/g
+      file.data = file.data.replace(buttonRegex, '<a class="button" href="$<url>">$<text></a>');
+    }
+  },
   modules: ['@nuxt/content'],
 }

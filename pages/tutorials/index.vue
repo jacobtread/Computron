@@ -16,16 +16,19 @@ import TextBlock from "../../components/TextBlock";
 
 export default {
   components: {TextBlock},
+  // Handle asynchronously fetched data
   async asyncData({$content}) {
-    const tutorials = await $content('tutorials').only(['title', 'description', 'slug']).fetch();
-    console.log(tutorials)
-    return {
-      tutorials
-    }
+    /*
+    * We need to retrieve the titles, descriptions and slugs
+    * of the tutorials from the file system so that they can
+    * be displayed on the page.
+    *
+    * We can ignore the body because we don't access that yet
+    */
+    const tutorials = await $content('tutorials')
+      .only(['title', 'description', 'slug'])
+      .fetch();
+    return {tutorials} // Pass the tutorials as data
   }
 }
 </script>
-
-<style scoped lang="sass">
-
-</style>
