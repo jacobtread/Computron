@@ -36,7 +36,7 @@ want but the steps you will need for remote support are listed here
 For the technician to be able to connect to your computer you must give them both your unique ID and password that
 teamviewer has given you they will appear inside the teamviewer software the following screenshot highlights these
 
-![Team Viewer Preview](/images/teamviewer_preview.png)
+![Team Viewer Preview](images/teamviewer_preview.png)
 
 ## 5
 
