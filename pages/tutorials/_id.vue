@@ -60,7 +60,7 @@ export default {
     img
       margin:
       display: block
-      margin-top: 1em
+      margin-top: 6em
       width: 100%
       height: auto
 </style>
