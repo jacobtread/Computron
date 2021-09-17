@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <article class="content">
-      <nuxt-content :document="page"/>
-    </article>
-  </div>
+  <article class="content">
+    <NuxtLink to="/tutorials" class="button">< Go Back</NuxtLink>
+    <nuxt-content :document="tutorial"/>
+  </article>
 </template>
 
 <script>
 export default {
-  async asyncData({$content, route}) {
-    const page = await $content('tutorials', route.params.id).fetch()
+  async asyncData({$content /* The nuxt content api */, route /* The current route */}) {
     return {
-      page
+      // Retrieve the tutorial that matches the page id in the route
+      tutorial: await $content('tutorials', route.params.id).fetch()
     }
   }
 }
@@ -23,7 +22,7 @@ export default {
 .content
   width: 100%
   max-width: 1000px
-  margin: 1em auto
+  margin: 0 auto
   text-align: center
 
   ::v-deep
@@ -43,6 +42,7 @@ export default {
         height: 4px
         background-color: $primary
         transform: translateX(-50%)
+
     p
       line-height: 1.5
       margin: 0 auto

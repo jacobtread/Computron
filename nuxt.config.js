@@ -31,10 +31,8 @@ export default {
     ]
   },
   components: true,
-  buildModules: [
-    '@nuxt/typescript-build',
-  ],
   router: {
+    // Make sure the router adds /Computron/ to the url start (This is for github pages)
     base: '/Computron/'
   },
   hooks: {
@@ -46,5 +44,6 @@ export default {
       file.data = file.data.replace(buttonRegex, '<a class="button" href="$<url>">$<text></a>');
     }
   },
+  // Use the nuxt content module
   modules: ['@nuxt/content'],
 }

@@ -48,10 +48,9 @@
   </div>
 </template>
 
-<script lang="ts">
-
-import IconBlock from "~/components/IconBlock.vue"
-import TextBlock from "~/components/TextBlock.vue"
+<script>
+import IconBlock from "~/components/IconBlock"
+import TextBlock from "~/components/TextBlock"
 
 export default {
   components: {
@@ -59,5 +58,4 @@ export default {
     TextBlock
   }
 }
-
 </script>

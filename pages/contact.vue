@@ -21,7 +21,7 @@
         to help speed up the process of us helping you
       </template>
       <template #buttons>
-        <NuxtLink to="/support" class="button">
+        <NuxtLink to="/tutorials/support-setup" class="button">
           Get Support
         </NuxtLink>
       </template>
@@ -29,8 +29,7 @@
   </div>
 </template>
 
-<script lang="ts">
-
+<script>
 import IconBlock from "~/components/IconBlock.vue"
 import TextBlock from "~/components/TextBlock.vue"
 
@@ -40,13 +39,4 @@ export default {
     TextBlock
   }
 }
-
 </script>
-
-
-<style scoped lang="sass">
-
-.email-button
-  padding: 1em 4em
-
-</style>
