@@ -18,8 +18,6 @@ export default {
 </script>
 
 <style lang="sass">
-// Imports the Roboto font style from the google font api's
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
 // Import the reset stylesheet to make the styles look the same across browsers
 @import "assets/css/reset.css"
 // Imports the global stylesheet for global styles
