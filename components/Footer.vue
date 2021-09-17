@@ -15,9 +15,7 @@
 </template>
 
 <script>
-export default {
-  name: "Footer"
-}
+export default {name: "Footer"}
 </script>
 
 <style scoped lang="sass">
@@ -69,6 +67,7 @@ footer
         color: white
         margin-right: 0.25em
         font-weight: bold
+
   p
     color: #BDBDBD
 

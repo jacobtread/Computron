@@ -4,7 +4,7 @@
       Here are some quick links to different categories clicking them will take you to the portion of the page that
       contains the related download links
     </TextBlock>
-    <nav class="nav" id="nav">
+    <nav id="nav">
       <button v-for="(category, index) in categories"
               :key="index"
               class="button ignore-active"
@@ -74,7 +74,7 @@ export default {
 <style scoped lang="sass">
 @import "../assets/css/variables"
 
-.nav
+nav
   display: flex
   flex-flow: row
   flex-wrap: wrap
