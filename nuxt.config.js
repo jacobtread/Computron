@@ -1,14 +1,20 @@
 export default {
-  target: 'static',
+  target: 'static', // Deploy the content as static html
   head: {
+    // Provide the page title
     title: 'Computron - Computer/Networking Repairs & Application Training',
     htmlAttrs: {
+      // Set the html lang attribute to en (English)
       lang: 'en'
     },
+    // Provide the page meta tags
     meta: [
+      // Set the encoding to utf-8
       {charset: 'utf-8'},
+      // Set the window viewport properties
+
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      /* Website Meta (author, keywords, etc) */
+      // Website Meta (author, keywords, etc)
       {name: 'author', content: 'Jacob Read'},
       {
         hid: 'description',
@@ -17,7 +23,7 @@ export default {
       },
       {name: 'keywords', content: 'computers,networking,repairs,software,downloads,training'},
       {name: 'format-detection', content: 'telephone=no'},
-      /* Open Graph Protocol Meta (see https://opengraphprotocol.org/) */
+      // Open Graph Protocol Meta (see https://opengraphprotocol.org/)
       {name: 'og:title', content: 'Computron'},
       {name: 'og:type', content: 'website'},
       {
