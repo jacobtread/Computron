@@ -8,7 +8,7 @@
       at the top of this site.
     </TextBlock>
 
-    <IconBlock title="Downloads" icon="download.svg" icon-name="Download Icon">
+    <TextBlock title="Downloads" icon="download.svg" icon-name="Download Icon">
       <template>
         We have a large selection of free and powerful software from everyday helpful tools to ISO images for installing
         operating systems we’ve got downloads for everything all in one place
@@ -18,9 +18,9 @@
           View Downloads
         </NuxtLink>
       </template>
-    </IconBlock>
+    </TextBlock>
 
-    <IconBlock title="Tutorials" icon="tutorials.svg" icon-name="Tutorials Icon" reversed>
+    <TextBlock title="Tutorials" icon="tutorials.svg" icon-name="Tutorials Icon" reversed>
       <template>
         On the tutorials page of our website you will find helpful tutorials to setup certain software and get the best
         out of your computer and the software that you are running on it
@@ -30,9 +30,9 @@
           View Tutorials
         </NuxtLink>
       </template>
-    </IconBlock>
+    </TextBlock>
 
-    <IconBlock title="Remote Support" icon="support.svg" icon-name="Support Icon">
+    <TextBlock title="Remote Support" icon="support.svg" icon-name="Support Icon">
       <template>
         We have an easy to use tutorial to help you get setup before we help you remotely this tutorial is intended to
         be
@@ -43,19 +43,15 @@
           Get Support
         </NuxtLink>
       </template>
-    </IconBlock>
+    </TextBlock>
 
   </div>
 </template>
 
 <script>
-import IconBlock from "~/components/IconBlock"
 import TextBlock from "~/components/TextBlock"
 
 export default {
-  components: {
-    IconBlock,
-    TextBlock
-  }
+  components: {TextBlock}
 }
 </script>

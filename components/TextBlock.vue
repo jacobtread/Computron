@@ -1,15 +1,24 @@
 <template>
-  <div class="block" v-bind:class="{ 'block--numbered': numbered, 'block--centered': centered }">
-    <h1>{{ title }}</h1>
-    <p>
-      <slot/>
-    </p>
-    <div class="buttons">
-      <slot name="buttons"/>
+  <div :class="{
+        'block': true,
+        'block--numbered': numbered, // Apply the block--numbered class if numbered is ture
+        'block--centered': centered, // Apply the block--centered class if centered is ture
+        'block--icon': icon, // Apply the block--icon class if icon was provided
+        'block--reversed': reversed // Apply the block--reversed class if reversed is ture
+     }">
+    <div :class="{'block__text': icon}">
+      <h1>{{ title }}</h1>
+      <p>
+        <slot/>
+      </p>
+      <div class="buttons">
+        <slot name="buttons"/>
+      </div>
+      <div class="extra">
+        <slot name="extra"/>
+      </div>
     </div>
-    <div class="extra">
-      <slot name="extra"/>
-    </div>
+    <img v-if="icon" :src="require(`../assets/img/${icon}`)" :alt="iconName" width="16" height="16">
   </div>
 </template>
 
@@ -19,7 +28,10 @@ export default {
   props: {
     title: String,
     numbered: Boolean,
-    centered: Boolean
+    centered: Boolean,
+    icon: String,
+    reversed: Boolean,
+    iconName: String
   }
 }
 </script>
@@ -47,6 +59,32 @@ export default {
       width: 80%
       height: 4px
       background-color: $primary
+
+  &--icon
+    display: flex
+    flex-flow: row
+    align-items: center
+    justify-content: space-between
+
+  &--reversed
+    flex-flow: row-reverse
+    text-align: right
+
+    h1::before
+      left: auto
+      right: 0
+
+    .buttons
+      justify-content: flex-end
+
+  &__text
+    flex: 1 1 auto
+    max-width: 500px
+
+  img
+    max-height: 200px
+    width: auto
+    height: auto
 
   &--numbered
     h1
@@ -98,6 +136,9 @@ export default {
   .block
     flex-flow: column-reverse
     text-align: center
+
+    &--reversed .buttons
+      justify-content: center
 
     h1::before
       left: 50%

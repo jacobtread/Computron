@@ -14,7 +14,7 @@
       </template>
     </TextBlock>
 
-    <IconBlock title="Remote Support" icon="support.svg" icon-name="Support Icon">
+    <TextBlock title="Remote Support" icon="support.svg" icon-name="Support Icon">
       <template>
         If you need help with your devices we may be able to help your remotely. We have an easy to use tutorial to help
         you get setup before we help you remotely this tutorial is intended to be followed before contacting us in order
@@ -25,18 +25,14 @@
           Get Support
         </NuxtLink>
       </template>
-    </IconBlock>
+    </TextBlock>
   </div>
 </template>
 
 <script>
-import IconBlock from "~/components/IconBlock.vue"
 import TextBlock from "~/components/TextBlock.vue"
 
 export default {
-  components: {
-    IconBlock,
-    TextBlock
-  }
+  components: {TextBlock}
 }
 </script>
