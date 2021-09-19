@@ -24,6 +24,7 @@ export default {
   max-width: 1000px
   margin: 0 auto
   text-align: center
+  padding: 2em
 
   ::v-deep
     h2
