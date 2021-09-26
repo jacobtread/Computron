@@ -2,77 +2,79 @@
   <article class="content">
     <!-- &lt; is the escape code for the "<" character -->
     <NuxtLink to="/tutorials" class="button">&lt; Go Back</NuxtLink>
+    <!-- Include the tutorial content markdown using Nuxt Content :document is the slug -->
     <nuxt-content :document="tutorial" />
   </article>
 </template>
 
-<script>
+<script lang="ts">
+import { Context } from "@nuxt/types"; // Import nuxt context type
+import { Route } from "vue-router/types/router"; // Import vue-router route type
+
 export default {
-  async asyncData({
-    $content /* The nuxt content api */,
-    route /* The current route */,
-  }) {
-    return {
-      // Retrieve the tutorial that matches the page id in the route
-      tutorial: await $content("tutorials", route.params.id).fetch(),
-    };
+  // Method for providing data when being server-side rendered
+  async asyncData(c: Context /* The nuxt context */) {
+    const $content = c.$content; // The nuxt content
+    const route: Route = c.route; // The nuxt current route
+    // Retrieve the tutorial that matches the page id in the route
+    const tutorial = await $content("tutorials", route.params.id).fetch();
+    // Return the tutorial
+    return { tutorial };
   },
 };
 </script>
 
 <style scoped lang="scss">
-@import "~/assets/css/variables";
-
 .content {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   padding: 2em;
+}
+</style>
 
-  ::v-deep {
-    h2 {
-      font-size: 4em;
-      display: inline-block;
-      position: relative;
-      color: black;
-      margin: 0.9em 0;
+<!-- These styles cannot be scoped because they affect the nuxt content -->
+<style lang="scss">
+@import "~/assets/css/variables";
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 120%;
-        width: 150%;
-        height: 4px;
-        background-color: $primary;
-        transform: translateX(-50%);
-      }
-    }
-    p {
-      line-height: 1.5;
-      margin: 0 auto;
-      max-width: 600px;
-    }
+.nuxt-content {
+  h2 {
+    font-size: 4em;
+    display: inline-block;
+    position: relative;
+    color: black;
+    margin: 0.9em 0;
 
-    a:not(.button) {
-      display: block;
-      color: #343534;
-      margin-top: 1.5em;
-    }
+    @include underline();
 
-    .button {
-      display: inline-block;
-      margin-top: 2em;
+    &::before {
+      width: 150%;
     }
+  }
+  p {
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+  }
 
-    img {
-      margin: 1em;
-      display: block;
-      margin-top: 6em;
-      width: 100%;
-      height: auto;
-    }
+  a:not(.button) {
+    display: block;
+    color: #343534;
+    margin-top: 1.5em;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 2em;
+  }
+
+  img {
+    margin: 1em;
+    display: block;
+    margin-top: 6em;
+    width: 100%;
+    height: auto;
   }
 }
 </style>
