@@ -44,13 +44,6 @@
         </div>
       </div>
     </div>
-    <button
-      class="button--top button"
-      id="topButton"
-      v-on:click="scrollTo('header')"
-    >
-      Back to top ^
-    </button>
   </div>
 </template>
 
@@ -65,34 +58,15 @@ export default {
     return await $content("downloads").fetch(); // Give view access to the data
   },
   mounted() {
-    function scrollTo(tag: string) {
-      (document.querySelector(tag) as HTMLElement).scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-
-    const elements = document.querySelectorAll(".nav > *");
+    const elements = document.querySelectorAll("#nav .button");
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i] as HTMLElement;
+      const category: string = element.getAttribute("data-category")!;
+      const target: HTMLElement = document.querySelector(`#${category}`)!;
       element.onclick = () => {
-        scrollTo("#" + element.getAttribute("data-category"));
+        target.scrollIntoView({behavior: "smooth"})
       };
     }
-
-    const topButton: HTMLElement =
-      document.getElementById(
-        "topButton"
-      ) as HTMLElement; /* Assert top button will not be null */
-
-    function updateTopButton(): void {
-      if (document.documentElement.scrollTop > 300) {
-        topButton.classList.add("button--top--active");
-      } else {
-        topButton.classList.remove("button--top--active");
-      }
-    }
-    document.addEventListener("scroll", updateTopButton);
-    updateTopButton();
   },
 };
 </script>
@@ -137,22 +111,6 @@ nav {
     width: 80%;
     height: 4px;
     background-color: $primary;
-  }
-}
-.button--top {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  z-index: 0;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  transition: opacity 0.2s ease;
-
-  &--active {
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="footer">
     <!-- Left side of the footer -->
     <div class="contact">
       <h2>Contact</h2>
