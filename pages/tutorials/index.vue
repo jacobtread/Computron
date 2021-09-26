@@ -11,13 +11,15 @@
   </div>
 </template>
 
-<script>
-import TextBlock from "../../components/TextBlock";
+<script lang="ts">
+import { Context } from '@nuxt/types';
+import TextBlock from "~/components/TextBlock.vue"; // Import the text block component
 
 export default {
   components: {TextBlock},
   // Handle asynchronously fetched data
-  async asyncData({$content}) {
+  async asyncData(context: Context) {
+    const $content = context.$content;
     /*
     * We need to retrieve the titles, descriptions and slugs
     * of the tutorials from the file system so that they can
