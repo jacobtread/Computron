@@ -1,34 +1,26 @@
+<!-- This file contains the default page layout -->
 <template>
   <div>
-    <Header/>
+    <!-- The header componet -->
+    <Header />
+    <!-- The page content -->
     <Nuxt />
-    <Footer/>
+    <!-- The footer component -->
+    <Footer />
   </div>
 </template>
 
 <script>
-
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header"; // Import the header component
+import Footer from "../components/Footer"; // Import the footer component
 
 export default {
-  name: "default",
-  components: {Footer, Header}
-}
+  // Specify the components that are being used
+  components: { Footer, Header },
+};
 </script>
 
-<style lang="sass">
-// Import the reset stylesheet to make the styles look the same across browsers
-@import "assets/css/reset.css"
+<style lang="scss">
 // Imports the global stylesheet for global styles
-@import "assets/css/global"
-
-// Apply to all elements with text
-h1, h2, h3, h4, h5, h6, input, button, p, span, a
-  // Set the font family
-  font-family: "Roboto", Roboto, Avenir, Helvetica, Arial, sans-serif
-  // Apply font smoothing
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-
+@import "~/assets/css/global";
 </style>

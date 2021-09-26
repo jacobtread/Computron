@@ -1,27 +1,42 @@
 <template>
   <div>
     <TextBlock title="Quick Access" centered>
-      Here are some quick links to different categories clicking them will take you to the portion of the page that
-      contains the related download links
+      Here are some quick links to different categories clicking them will take
+      you to the portion of the page that contains the related download links
     </TextBlock>
     <nav id="nav">
-      <button v-for="(category, index) in categories"
-              :key="index"
-              class="button ignore-active"
-              :data-category="category.id">
+      <button
+        v-for="(category, index) in categories"
+        :key="index"
+        class="button ignore-active"
+        :data-category="category.id"
+      >
         {{ category.title }}
       </button>
     </nav>
     <div class="blocks">
-      <div v-for="(category, index) in categories" :key="index" :id="category.id">
+      <div
+        v-for="(category, index) in categories"
+        :key="index"
+        :id="category.id"
+      >
         <div class="title__wrapper">
           <h1 class="title">{{ category.title }}</h1>
         </div>
         <div class="blocks padded">
-          <TextBlock v-for="(item, index) in category.children" :key="index" :title="item.name">
+          <TextBlock
+            v-for="(item, index) in category.children"
+            :key="index"
+            :title="item.name"
+          >
             {{ item.description }}
             <template #buttons>
-              <a :href="item.link" rel="noreferrer" target="_blank" class="button">
+              <a
+                :href="item.link"
+                rel="noreferrer"
+                target="_blank"
+                class="button"
+              >
                 View Download
               </a>
             </template>
@@ -29,99 +44,115 @@
         </div>
       </div>
     </div>
-    <button class="button--top button" id="topButton" v-on:click="scrollTo('header')">Back to top ^</button>
+    <button
+      class="button--top button"
+      id="topButton"
+      v-on:click="scrollTo('header')"
+    >
+      Back to top ^
+    </button>
   </div>
 </template>
 
-<script>
-import TextBlock from "../components/TextBlock";
+<script lang="ts">
+import { Context } from "@nuxt/types";
+import TextBlock from "../components/TextBlock.vue";
 
 export default {
-  components: {TextBlock},
-  async asyncData({$content}) {
-    const {categories} = await $content('downloads').fetch() // Retrieve all the categories from downloads.json
-    return {categories} // Give view access to the data
-  },
-  methods: {
-    scrollTo(tag) {
-      document.querySelector(tag).scrollIntoView({behavior: 'smooth'});
-    }
+  components: { TextBlock },
+  async asyncData(context: Context) {
+    const $content = context.$content;
+    return await $content("downloads").fetch(); // Give view access to the data
   },
   mounted() {
-    const elements = document.querySelectorAll('.nav > *');
+    function scrollTo(tag: string) {
+      (document.querySelector(tag) as HTMLElement).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    const elements = document.querySelectorAll(".nav > *");
     for (let i = 0; i < elements.length; i++) {
-      const element = elements[i];
+      const element = elements[i] as HTMLElement;
       element.onclick = () => {
-        this.scrollTo('#' + element.getAttribute('data-category'))
-      }
+        scrollTo("#" + element.getAttribute("data-category"));
+      };
     }
 
-    const updateTopButton = function () {
+    const topButton: HTMLElement =
+      document.getElementById(
+        "topButton"
+      ) as HTMLElement; /* Assert top button will not be null */
+
+    function updateTopButton(): void {
       if (document.documentElement.scrollTop > 300) {
-        topButton.classList.add('button--top--active')
+        topButton.classList.add("button--top--active");
       } else {
-        topButton.classList.remove('button--top--active')
+        topButton.classList.remove("button--top--active");
       }
     }
-
-    const topButton = document.getElementById('topButton')
-    document.addEventListener('scroll', updateTopButton);
+    document.addEventListener("scroll", updateTopButton);
     updateTopButton();
-  }
-}
+  },
+};
 </script>
 
-<style scoped lang="sass">
-@import "../assets/css/variables"
+<style scoped lang="scss">
+@import "~/assets/css/variables";
 
-nav
-  display: flex
-  flex-flow: row
-  flex-wrap: wrap
+nav {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 
-  justify-content: center
+  justify-content: center;
 
-  max-width: 1200px
-  margin: 0 auto
+  max-width: 1200px;
+  margin: 0 auto;
 
-  ::v-deep .button
-    margin: 0.5em 1em
+  .button {
+    margin: 0.5em 1em;
+  }
+}
 
-.padded
-  grid-gap: 3em
+.padded {
+  grid-gap: 3em;
+}
 
-.title
-  position: relative
-  display: inline-block
-  text-align: center
+.title {
+  position: relative;
+  display: inline-block;
+  text-align: center;
 
-  &__wrapper
-    display: block
-    text-align: center
+  &__wrapper {
+    display: block;
+    text-align: center;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+    width: 80%;
+    height: 4px;
+    background-color: $primary;
+  }
+}
+.button--top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 0;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s ease;
 
-  &::before
-    content: ''
-    position: absolute
-    left: 50%
-    transform: translateX(-50%)
-    top: 120%
-    width: 80%
-    height: 4px
-    background-color: $primary
-
-.button--top
-  position: fixed
-  bottom: 2em
-  right: 2em
-  z-index: 0
-  cursor: pointer
-  opacity: 0
-  pointer-events: none
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
-  transition: opacity 0.2s ease
-
-  &--active
-    opacity: 1
-    pointer-events: auto
-
+  &--active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
 </style>

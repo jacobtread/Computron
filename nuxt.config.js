@@ -54,4 +54,6 @@ export default {
   },
   // Use the nuxt content module
   modules: ['@nuxt/content'],
+  // Use typescript build module
+  buildModules: ['@nuxt/typescript-build']
 }

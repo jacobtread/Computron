@@ -1,0 +1,81 @@
+// Import the variables styles
+@import "variables.scss";
+// Import the reset stylesheet to make the styles look the same across browsers
+@import "reset.scss";
+
+// Apply to all elements with text
+h1, h2, h3, h4, h5, h6, input, button, p, span, a {
+  // Set the font family
+  font-family: "Roboto", Roboto, Avenir, Helvetica, Arial, sans-serif;
+  // Apply font smoothing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Buttons that are "a" elements
+a.button {
+  text-decoration: none; // Remove the default text decoration (underline)
+}
+
+// Buttons that are "button" elements
+button.button {
+  border: none; // Remove the default border
+}
+
+// Button styles
+.button {
+  text-transform: uppercase; // Make the text uppercase
+  font-weight: bold; // Make the text bold
+  letter-spacing: 0.1em; // Space the text by 0.1x the font size
+  padding: 1em 2em; // Apply padding to the button that is 1x the font size on the top & bottom and 2x on the left & right
+
+  border-radius: 0.2em; // Round the corners of the button by 0.2x the font size
+  cursor: pointer;  // Change the cursor style to a pointer when hovered
+
+
+  color: $button-text-default; // Set the button text colour
+  background-color: $button-background-default; // Set the button background colour
+  
+  transition: background-color 0.2s ease, color 0.2s ease; // Apply a transition for when the background and text colour changes
+  
+  // When the button is hovered 
+  &:hover {
+    background-color: $button-background-hover; // Change the background colour
+  }
+}
+
+// When the button is the active link and does not ignore actives
+.nuxt-link-exact-active.button:not(.ignore-active) {
+  transition: background-color 0.5s ease, color 0.2s ease; // Apply a transition slower than the removing one
+
+  background-color: $button-background-active; // Change the background colour
+  color: $button-text-active; // Change the text colour
+
+  // When the button is hovered
+  &:hover {
+    background-color: $button-background-active; // Change the background colour
+  }
+}
+
+/* 
+Target elements with the "blocks" class
+
+Intend for use as a wrapper for content displayed
+in the form of a column of blocks going down the page
+*/
+.blocks {
+  width: 100%; // Take as much width as possible
+  max-width: 900px; // Limit the maximum width to 900px
+
+  display: grid; // Display the content as a grid
+  grid-auto-flow: row; // Place the content in rows
+  grid-gap: 6em; // Space the content with gaps of 6x the font size
+  margin: 5em auto; // Apply a vertical margin of 5em and automatically apply the horizontal margin to center
+}
+
+// When the screen width is less than 1150px
+@media screen and (max-width: 1150px) {
+  .blocks {
+    max-width: 700px; // Limit the maximum width to 700px
+  }
+}
