@@ -1,13 +1,16 @@
 <template>
   <div>
+    <!-- The title text block -->
     <TextBlock title="Quick Access" centered>
       Here are some quick links to different categories clicking them will take
       you to the portion of the page that contains the related download links
     </TextBlock>
+    <!-- The navigation button list -->
     <nav id="nav">
+      <!-- Adds a button for every category inside categories -->
       <button
-        v-for="(category, index) in categories"
-        :key="index"
+        v-for="category in categories"
+        :key="category.id"
         class="button ignore-active"
         :data-category="category.id"
       >
@@ -15,15 +18,18 @@
       </button>
     </nav>
     <div class="blocks">
+      <!-- For each of the categories add a block -->
       <div
         v-for="(category, index) in categories"
         :key="index"
         :id="category.id"
       >
-        <div class="title__wrapper">
+        <div class="title-wrapper">
+          <!-- The category title -->
           <h1 class="title">{{ category.title }}</h1>
         </div>
-        <div class="blocks padded">
+        <div class="blocks">
+          <!-- Add a text block with each of the children -->
           <TextBlock
             v-for="(item, index) in category.children"
             :key="index"
@@ -77,34 +83,33 @@ export default {
 
 // The navigation list
 nav {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
+  display: flex; // Display as a flexbox
+  flex-flow: row; // Flow the contents into a row
+  flex-wrap: wrap; // Allow the content to wrap if it becomes to large
 
-  justify-content: center;
+  justify-content: center; // Align the nav contents to center
 
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; // Max the nav size to 1200px wide
+  margin: 0 auto; // Align the nav to center
 
+  // Buttons within the nav
   .button {
-    margin: 0.5em 1em;
+    margin: 0.5em 1em; // Add margin around the buttons to space them evenly
   }
 }
 
-.padded {
-  grid-gap: 3em;
+// Wrapper for the title to make it centered
+.title-wrapper {
+  display: block; // Display as a block
+  text-align: center; // Align the text to center
 }
 
+// The category title
 .title {
-  position: relative;
-  display: inline-block;
-  text-align: center;
+  position: relative; // This element needs to be relative positioning to be the parent of the underline
+  display: inline-block; // Display as an inline block to keep its width while acting like a block
 
-  &__wrapper {
-    display: block;
-    text-align: center;
-  }
-  
+  // Include the underline mixin for the blue underline
   @include underline();
 }
 </style>
