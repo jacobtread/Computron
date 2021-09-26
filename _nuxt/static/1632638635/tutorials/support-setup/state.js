@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002FComputron\u002F_nuxt\u002Fstatic\u002F1632638635",layout:"default",error:a,serverRendered:true,routePath:"\u002Ftutorials\u002Fsupport-setup",config:{_app:{basePath:"\u002FComputron\u002F",assetsPath:"\u002FComputron\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"05252dae"}}}}(null));
