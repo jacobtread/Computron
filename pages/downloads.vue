@@ -53,14 +53,16 @@ import TextBlock from "../components/TextBlock.vue";
 
 export default {
   components: { TextBlock },
-  async asyncData(context: Context) {
-    const $content = context.$content;
-    return await $content("downloads").fetch(); // Give view access to the data
+  // Method for providing data when being server-side rendered
+  async asyncData(c: Context /* The nuxt context */) {
+    // Fetch the data using nuxt content and use it as data
+    return await c.$content("downloads").fetch(); 
   },
+  // Hook for when the component is added to the DOM
   mounted() {
     const elements = document.querySelectorAll("#nav .button");
     for (let i = 0; i < elements.length; i++) {
-      const element = elements[i] as HTMLElement;
+      const element: HTMLElement = elements[i] as HTMLElement;
       const category: string = element.getAttribute("data-category")!;
       const target: HTMLElement = document.querySelector(`#${category}`)!;
       element.onclick = () => {
