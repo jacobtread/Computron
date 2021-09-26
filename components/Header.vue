@@ -59,6 +59,7 @@ header {
     color: #b4b4b4; // Set the text to a gray
     font-size: 0.8em; // Set the font size to 0.8x the normal font size
     margin: 1em 1.5em 0; // Apply a margin of 1em for the top and 1.5em for the left & right
+    word-wrap: break-word;
   }
 }
 
@@ -104,6 +105,14 @@ nav {
     justify-content: center; // Make the nav children centered
     margin-top: 1em; // Slight margin on the top to create a gap between the logo
     flex-wrap: wrap; // Allow the content to wrap
+  }
+}
+
+// Only apply when screen width hits 230px
+@media all and (max-width: 230px) {
+  // Target the text under the logo
+  .logo__subtext {
+    display: none; // Hide the subtext on extra small screens
   }
 }
 </style>
