@@ -55,7 +55,7 @@
 
 <script lang="ts">
 import { Context } from "@nuxt/types";
-import TextBlock from "../components/TextBlock.vue";
+import TextBlock from "~/components/TextBlock.vue";
 
 export default {
   components: { TextBlock },
