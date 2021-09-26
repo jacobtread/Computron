@@ -2,7 +2,6 @@
   <div
     :class="{
       block: true,
-      'block--numbered': numbered, // Apply the block--numbered class if numbered is ture
       'block--centered': centered, // Apply the block--centered class if centered is ture
       'block--iconified': icon, // Apply the block--iconified class if icon was provided
       'block--reversed': reversed, // Apply the block--reversed class if reversed is ture
