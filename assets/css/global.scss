@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5, h6, input, button, p, span, a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  // Increased line height to make text more readable
+  line-height: 1.5;
+}
+
 // Buttons that are "a" elements
 a.button {
   text-decoration: none; // Remove the default text decoration (underline)
