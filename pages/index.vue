@@ -10,11 +10,9 @@
     </TextBlock>
 
     <TextBlock title="Downloads" icon="download.svg" icon-name="Download Icon">
-      <template>
-        We have a large selection of free and powerful software from everyday
-        helpful tools to ISO images for installing operating systems we’ve got
-        downloads for everything all in one place
-      </template>
+      We have a large selection of free and powerful software from everyday
+      helpful tools to ISO images for installing operating systems we’ve got
+      downloads for everything all in one place
       <template #buttons>
         <NuxtLink to="/downloads" class="button"> View Downloads </NuxtLink>
       </template>
@@ -26,11 +24,9 @@
       icon-name="Tutorials Icon"
       reversed
     >
-      <template>
-        On the tutorials page of our website you will find helpful tutorials to
-        setup certain software and get the best out of your computer and the
-        software that you are running on it
-      </template>
+      On the tutorials page of our website you will find helpful tutorials to
+      setup certain software and get the best out of your computer and the
+      software that you are running on it
       <template #buttons>
         <NuxtLink to="/tutorials" class="button"> View Tutorials </NuxtLink>
       </template>
@@ -41,11 +37,9 @@
       icon="support.svg"
       icon-name="Support Icon"
     >
-      <template>
-        We have an easy to use tutorial to help you get setup before we help you
-        remotely this tutorial is intended to be followed before contacting us
-        in order to help speed up the process of us helping you
-      </template>
+      We have an easy to use tutorial to help you get setup before we help you
+      remotely this tutorial is intended to be followed before contacting us in
+      order to help speed up the process of us helping you
       <template #buttons>
         <NuxtLink to="/support" class="button"> Get Support </NuxtLink>
       </template>
