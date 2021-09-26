@@ -1,8 +1,8 @@
 
 /** 
-    This file stores the variables used
-    throught out the various stylesheets in
-    this website.
+    This file stores the variables & mixins 
+    used throught out the various stylesheets
+    in this website.
 **/
     
 $background: #1A1D2D;
@@ -16,3 +16,22 @@ $button-text-default: #9F9F9F;
 $button-text-active: white;
 
 $extra-link-colour: #343534;
+
+@mixin underline() {
+    // Target the pseudo element before the element
+    &::before {
+      /* 
+        This pseudo element is used to create the 
+        underline effect that is under the title
+      */
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 120%;
+      width: 80%;
+      height: 4px;
+      background-color: $primary;
+    }
+  }
+  

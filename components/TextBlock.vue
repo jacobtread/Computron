@@ -90,20 +90,15 @@ export default {
     position: relative; // This element needs to be relative positioning to be the parent of the underline
     color: black; // Set the text color to black
     margin-bottom: 0.9em; // Add a margin to the bottom 0.9x the font size
-
+    @include underline();
     // Target the pseudo element before the title (h1)
     &::before {
       /* 
         This pseudo element is used to create the 
         underline effect that is under the title
       */
-      content: ""; // Give it an empty content
-      position: absolute; // Set its position to absolute
       left: 0; // Put it all the way to the left of the parent
-      top: 120%; // Put it at the bottom +20% of the parent
-      width: 80%; // Make it 80% of the parent width
-      height: 4px; // Make the line only 4px
-      background-color: $primary; // Set its fill color to the primary (blue) colour
+      transform: translateX(0); // Remove translation done by include
     }
   }
 

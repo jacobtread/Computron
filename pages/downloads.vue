@@ -75,6 +75,7 @@ export default {
 <style scoped lang="scss">
 @import "~/assets/css/variables";
 
+// The navigation list
 nav {
   display: flex;
   flex-flow: row;
@@ -103,15 +104,7 @@ nav {
     display: block;
     text-align: center;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 120%;
-    width: 80%;
-    height: 4px;
-    background-color: $primary;
-  }
+  
+  @include underline();
 }
 </style>
