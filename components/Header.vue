@@ -78,7 +78,7 @@ nav {
 }
 
 // Only apply when screen width hits 1150px
-@media screen and (max-width: 1150px) {
+@media all and (max-width: 1190px) {
   /* 
     On smaller displays the header is swapped
     to a centered column layout where the content
