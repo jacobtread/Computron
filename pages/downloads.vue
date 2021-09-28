@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="blocks">
-    <!-- The title text block -->
-    <TextBlock title="Quick Access" centered>
-      Here are some quick links to different categories clicking them will take
-      you to the portion of the page that contains the related download links
-    </TextBlock>
+      <!-- The title text block -->
+      <TextBlock title="Quick Access" centered>
+        Here are some quick links to different categories clicking them will
+        take you to the portion of the page that contains the related download
+        links
+      </TextBlock>
     </div>
     <!-- The navigation button list -->
     <nav id="nav">
@@ -153,12 +154,11 @@ nav {
 
   .downloads {
     margin: 1em;
-  }
-
-  .downloads__block {
-    width: 100%;
-    min-width: auto;
-    max-width: 100%;
+    &__block {
+      width: 100%;
+      min-width: auto;
+      max-width: 100%;
+    }
   }
 }
 </style>
