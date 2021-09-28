@@ -17,36 +17,26 @@
         {{ category.title }}
       </button>
     </nav>
-    <div class="blocks">
-      <!-- For each of the categories add a block -->
-      <div
-        v-for="(category, index) in categories"
-        :key="index"
-        :id="category.id"
-      >
-        <div class="title-wrapper">
-          <!-- The category title -->
-          <h1 class="title">{{ category.title }}</h1>
-        </div>
-        <div class="blocks">
-          <!-- Add a text block with each of the children -->
-          <TextBlock
-            v-for="(item, index) in category.children"
-            :key="index"
-            :title="item.name"
-          >
+    <!-- For each of the categories add a block -->
+    <div v-for="(category, index) in categories" :key="index" :id="category.id">
+      <div class="title-wrapper">
+        <!-- The category title -->
+        <h1 class="title">{{ category.title }}</h1>
+      </div>
+      <div class="downloads">
+        <!-- Add a text block with each of the children -->
+        <div
+          class="downloads__block"
+          v-for="(item, index) in category.children"
+          :key="index"
+        >
+          <h2>{{ item.name }}</h2>
+          <p>
             {{ item.description }}
-            <template #buttons>
-              <a
-                :href="item.link"
-                rel="noreferrer"
-                target="_blank"
-                class="button"
-              >
-                View Download
-              </a>
-            </template>
-          </TextBlock>
+          </p>
+          <a class="button" :href="item.link" rel="noreffer" target="_blank"
+            >View Download</a
+          >
         </div>
       </div>
     </div>
@@ -67,8 +57,9 @@ export default {
   // Hook for when the component is added to the DOM
   mounted() {
     const elements: NodeListOf<Element> =
-      document.querySelectorAll("#nav .button");
+      document.querySelectorAll("#nav .button"); // Get all of the nav buttons
     for (let i = 0; i < elements.length; i++) {
+      // Iterate over the nav buttons
       const element: HTMLElement = elements[i] as HTMLElement;
       const category: string = element.getAttribute("data-category")!;
       const target: HTMLElement = document.querySelector(`#${category}`)!;
@@ -111,5 +102,51 @@ nav {
 
   // Include the underline mixin for the blue underline
   @include underline();
+}
+
+.downloads {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 2em;
+}
+
+.downloads__block {
+  flex: auto;
+  max-width: calc(100% / 4);
+  min-width: 300px;
+  margin: 3em 1em;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  .button {
+    display: block;
+    margin-top: 1em;
+  }
+}
+
+
+@media all and (max-width: 365px) {
+  
+  nav .button {
+    width: 100%;
+    display: block;
+  }
+
+  .downloads {
+    margin: 1em;
+  }
+
+  .downloads__block {
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+    padding: 0em;
+  }
+
 }
 </style>
