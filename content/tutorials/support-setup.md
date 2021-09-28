@@ -1,6 +1,5 @@
 ---
 title: Remote Support
-
 description: This is a tutorial on how to prepare your device to be given remote support. It includes a setup guide for the Team Viewer software which allows secure remote access to your device.
 ---
 
@@ -36,7 +35,7 @@ want but the steps you will need for remote support are listed here
 For the technician to be able to connect to your computer you must give them both your unique ID and password that
 teamviewer has given you they will appear inside the teamviewer software the following screenshot highlights these
 
-![Team Viewer Preview](images/teamviewer_preview.png)
+![Team Viewer Preview](images/teamviewer_preview.jpg)
 
 ## 5
 

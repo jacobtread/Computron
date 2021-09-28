@@ -31,7 +31,7 @@ open Options > Preferences > Advanced.
 Here you'll find a large list of flags for the app and a filter box.
 Locate and disable the following flags:
 
-![UTorrent Flags](images/utorrent-flags.png)
+![UTorrent Flags](images/utorrent-flags.jpg)
 
 - bt.enable_pulse
 - gui.show_notorrents_node
