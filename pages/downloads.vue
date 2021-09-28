@@ -1,10 +1,12 @@
 <template>
   <div>
+    <div class="blocks">
     <!-- The title text block -->
     <TextBlock title="Quick Access" centered>
       Here are some quick links to different categories clicking them will take
       you to the portion of the page that contains the related download links
     </TextBlock>
+    </div>
     <!-- The navigation button list -->
     <nav id="nav">
       <!-- Adds a button for every category inside categories -->
@@ -24,16 +26,21 @@
         <h1 class="title">{{ category.title }}</h1>
       </div>
       <div class="downloads">
-        <!-- Add a text block with each of the children -->
+        <!-- Add a block with each of the children -->
         <div
           class="downloads__block"
           v-for="(item, index) in category.children"
           :key="index"
         >
-          <h2>{{ item.name }}</h2>
-          <p>
-            {{ item.description }}
-          </p>
+          <div class="downloads__block__text">
+            <!-- The name of the download -->
+            <h2>{{ item.name }}</h2>
+            <!-- The description of the download -->
+            <p>
+              {{ item.description }}
+            </p>
+          </div>
+          <!-- A link to the download that will open in a new tab -->
           <a class="button" :href="item.link" rel="noreffer" target="_blank"
             >View Download</a
           >
@@ -76,7 +83,7 @@ export default {
 nav {
   display: flex; // Display as a flexbox
   flex-flow: row; // Flow the contents into a row
-  flex-wrap: wrap; // Allow the content to wrap if it becomes to large
+  flex-wrap: wrap; // Allow the content to wrap if it becomes too large
 
   justify-content: center; // Align the nav contents to center
 
@@ -105,33 +112,40 @@ nav {
 }
 
 .downloads {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  margin: 2em;
-}
+  display: flex; // Display as a flexbox
+  flex-flow: row; // Flow the contents into a row
+  flex-wrap: wrap; // Allow the content to wrap if it becomes too large
+  align-items: stretch;
+  justify-content: center; // Align the content to the center
+  text-align: center; // Align the text to center
+  margin: 2em; // Add a 2x the font size margin around the box
+  &__block {
+    padding: 1.5em;
+    border: 2px solid #eeeeee;
+    border-radius: 0.25em;
+    display: flex;
+    flex-flow: column;
+    flex: auto; // Automatically flex this box
+    max-width: calc(100% / 4); // Set the box width to 1/4 of the page
+    min-width: 300px; // Don't let the box go smaller than 300px
+    margin: 3em 1em; // Large margin on top and bottom to create good spacing and small left&right
 
-.downloads__block {
-  flex: auto;
-  max-width: calc(100% / 4);
-  min-width: 300px;
-  margin: 3em 1em;
-
-  h2 {
-    margin-bottom: 1em;
+    &__text {
+      flex: auto;
+      // The download title
+      h2 {
+        margin-bottom: 1em; // Some margin under the text so its not too close
+      }
+    }
+    // The download link
+    .button {
+      display: inline-block;
+      justify-self: flex-end;
+      margin: 1em 0 0;
+    }
   }
-
-  .button {
-    display: block;
-    margin-top: 1em;
-  }
 }
-
-
 @media all and (max-width: 365px) {
-  
   nav .button {
     width: 100%;
     display: block;
@@ -145,8 +159,6 @@ nav {
     width: 100%;
     min-width: auto;
     max-width: 100%;
-    padding: 0em;
   }
-
 }
 </style>

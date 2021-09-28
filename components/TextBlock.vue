@@ -79,9 +79,11 @@ export default {
 
 // The text block
 .block {
+  border: 2px solid #eeeeee;
+  border-radius: 0.25em;
   display: block; // Display the content as a block
   width: 100%; // Take up the full width
-  padding: 0 1em; // Apply no vertical padding but 1em of horizontal padding
+  padding: 3em; // Apply 3em of padding all around
   text-align: left; // Align the text to the left
 
   // The title element of the text block

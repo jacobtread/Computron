@@ -34,7 +34,7 @@ export default { name: "Footer" };
 @import "~/assets/css/variables";
 
 footer {
-  margin-top: 25vh;
+  margin-top: 20vh;
 
   display: flex;
   flex-flow: row;

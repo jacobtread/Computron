@@ -44,7 +44,7 @@ header {
   padding: 2em 4em; // Apply padding 2x the font size for the top & bottom and 4x for the left & right
 
   background-color: $background; // Apply the dark background colour
-  margin-bottom: 15vh; // Add a bottom margin to keep the below elements spaced away
+  margin-bottom: 10vh; // Add a bottom margin to keep the below elements spaced away
 }
 
 // The logo element

@@ -70,11 +70,11 @@ in the form of a column of blocks going down the page
 */
 .blocks {
   width: 100%; // Take as much width as possible
-  max-width: 900px; // Limit the maximum width to 900px
+  max-width: 1000px; // Limit the maximum width to 900px
 
   display: grid; // Display the content as a grid
   grid-auto-flow: row; // Place the content in rows
-  grid-gap: 6em; // Space the content with gaps of 6x the font size
+  grid-gap: 3em; // Space the content with gaps of 6x the font size
   margin: 5em auto; // Apply a vertical margin of 5em and automatically apply the horizontal margin to center
 }
 
