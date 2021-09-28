@@ -80,6 +80,21 @@
           "name": "WAX",
           "description": "Wax is a high performance and flexible video compositing and special effects software. The idea for Wax is to be very general purpose and flexible in video compositing and effects, so that you can compose your dream video sequence with ease everytime.",
           "link": "https://www.debugmode.com/wax/"
+        },
+        {
+          "name": "Captura",
+          "description": "Captura is a .Net application to capture the screen along with audio from microphone and speaker output and clicks and keystrokes. Captura can run unobtrusively remaining minimized to the System Tray. Take ScreenShots and control recordings from the keyboard even when Captura is in System Tray.",
+          "link": "https://mathewsachin.github.io/Captura/download/"
+        }, 
+        {
+          "name": "KDENLive",
+          "description": "Kdenlive is a free and open-source video editing software based on the MLT Framework, KDE and Qt. ",
+          "link": "https://kdenlive.org/en/download/"
+        }, 
+        {
+          "name": "LAME DLL",
+          "description": "LAME is a software encoder that converts a digitized WAV audio file into the MP3 audio coding file format. LAME is a free software project.",
+          "link": "https://lame.sourceforge.io/"
         }
       ]
     },
@@ -117,6 +132,16 @@
           "name": "Open Office",
           "description": "Apache OpenOffice is the leading open-source office software suite for word processing, spreadsheets, presentations, graphics, databases and more. It is available in many languages and works on all common computers. It stores all your data in an international open standard format and can also read and write files from other common office software packages.",
           "link": "https://www.openoffice.org/download/index.html"
+        },
+        {
+          "name": "Python",
+          "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.",
+          "link": "https://www.python.org/downloads/"
+        },
+        {
+          "name": "Scratch",
+          "description": "Scratch is a high-level block-based visual programming language and website targeted primarily at children 8–16 as an educational tool for programming.",
+          "link": "https://scratch.mit.edu/"
         }
       ]
     },
@@ -143,6 +168,11 @@
           "name": "Create Synchronicity",
           "description": "Create Synchronicity is a powerful and lightweight open source backup and synchronization program, available in many languages.",
           "link": "http://synchronicity.sourceforge.net/"
+        },
+        {
+          "name": "Clonezilla",
+          "description": "Clonezilla is a free and open-source disk cloning, disk imaging, data recovery, and deployment computer program.",
+          "link": "https://clonezilla.org/downloads.php"
         }
       ]
     },
@@ -186,6 +216,22 @@
           "name": "Team Viewer",
           "description": "TeamViewer is remote access and remote control computer software, allowing maintenance of computers and other devices. It was first released in 2005, and its functionality has expanded step by step.",
           "link": "https://www.teamviewer.com/en/"
+        }
+      ]
+    },
+    {
+      "id": "usbtools",
+      "title": "USB Tools",
+      "children": [
+        {
+          "name": "Ventoy",
+          "description": "Ventoy is a free and open-source utility used for writing image files onto storage media to create bootable USB flash drives. Once Ventoy is installed onto a USB drive, there is not need to reformat the disk to update it with new installation files; it is enough to copy the.iso,.wim,.img,.img, or.efi file to the USB drive and boot from them directly.",
+          "link": "https://www.ventoy.net/en/download.html"
+        },
+        {
+          "name": "Rufus",
+          "description": "Rufus is a small application that creates bootable USB drives, which can then be used to install or run Microsoft Windows, Linux or DOS. In just a few minutes, and with very few clicks.",
+          "link": "https://rufus.ie/en/"
         }
       ]
     },
