@@ -52,10 +52,27 @@ export default {
       width: 150%;
     }
   }
+
+  h3 {
+    margin: 0.9em 0;
+  }
+
   p {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 600px;
+  }
+
+  ul {
+    li {
+      display: block;
+      padding: 1em;
+      text-align: left;
+      border: 2px solid #eeeeee;
+      border-radius: 0.25em;
+      margin: 1em auto;
+      max-width: 600px;
+    }
   }
 
   a:not(.button) {
