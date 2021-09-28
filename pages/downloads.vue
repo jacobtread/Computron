@@ -121,13 +121,15 @@ nav {
   text-align: center; // Align the text to center
   margin: 2em; // Add a 2x the font size margin around the box
   &__block {
+    max-width: 300px;
     padding: 1.5em;
     border: 2px solid #eeeeee;
     border-radius: 0.25em;
     display: flex;
     flex-flow: column;
     flex: auto; // Automatically flex this box
-    max-width: calc(100% / 4); // Set the box width to 1/4 of the page
+    width: calc(100% / 4); // Set the box width to 1/4 of the page
+    max-width: 500px; // Don't let the box get bigger than 500px
     min-width: 300px; // Don't let the box go smaller than 300px
     margin: 3em 1em; // Large margin on top and bottom to create good spacing and small left&right
 
