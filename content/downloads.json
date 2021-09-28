@@ -6,27 +6,27 @@
       "children": [
         {
           "name": "Windows 10",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Windows 10 is the latest operating system from Microsoft, which brings back many features lost in previous editions and introduces long-awaited functionalities that have already been available on competitor software for a while now.",
           "link": "https://www.microsoft.com/en-us/software-download/windows10"
         },
         {
           "name": "Ubuntu Workstation Linux",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Ubuntu is a free and open source operating system and Linux distribution based on Debian. The workstation edition is a well rounded desktop operating system which can be used as an easy to switch to alternative to windows.",
           "link": "https://ubuntu.com/download/desktop"
         },
         {
           "name": "Ubuntu Server Linux",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Ubuntu is a free and open source operating system and Linux distribution based on Debian. The server edition is an easy to setup linux server which is great for anything from a small home gaming server all the way up to server infrastructure.",
           "link": "https://ubuntu.com/download/server"
         },
         {
           "name": "Noobs Raspberry PI",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "NOOBS is a way to make setting up a Raspberry Pi for the first time much, much easier. You won't need network access, and you won't need to download any special imaging software. NOOBS is very helpfull for setting up.",
           "link": "https://www.raspberrypi.org/downloads/noobs/"
         },
         {
           "name": "Raspbian Raspberry PI",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Raspberry Pi OS (previously called Raspbian) is the officially supported operating system. Install Raspberry Pi OS using Raspberry Pi Imager Raspberry Pi Imager is the quick and easy way to install Raspberry Pi OS and other operating systems to a microSD card, ready to use with your Raspberry Pi.",
           "link": "https://www.raspberrypi.org/downloads/raspbian/"
         }
       ]
@@ -37,17 +37,17 @@
       "children": [
         {
           "name": "Chrome",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Google Chrome is a cross-platform web browser developed by Google. It was first released in 2008 for Microsoft Windows, built with free software components from Apple WebKit and Mozilla Firefox.",
           "link": "https://www.google.com/chrome/"
         },
         {
           "name": "Firefox",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Mozilla Firefox or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko rendering engine to display web pages.",
           "link": "https://www.mozilla.org/en-US/firefox/new/"
         },
         {
           "name": "Opera",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Opera is a multi-platform web browser developed by Opera Software. Opera is nowadays a Chromium-based browser. It distinguishes itself from other browsers through its user interface and other features.",
           "link": "https://www.opera.com/"
         }
       ]
@@ -58,27 +58,27 @@
       "children": [
         {
           "name": "Gimp",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "GIMP is a free and open-source raster graphics editor used for image manipulation and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks.",
           "link": "https://www.gimp.org/downloads/"
         },
         {
           "name": "InfraRecorder",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "InfraRecorder is an open-source CD and DVD writing program for Microsoft Windows. First started by Christian Kindahl in the Google Summer of Code 2006, InfraRecorder uses the cdrtools software library to perform the actual burning.",
           "link": "http://infrarecorder.org/?page_id=5"
         },
         {
           "name": "VLC",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "VLC media player is a free and open-source, portable, cross-platform media player software and streaming media server developed by the VideoLAN project. VLC is available for desktop operating systems and mobile platforms, such as Android, iOS and iPadOS.",
           "link": "https://www.videolan.org/vlc/"
         },
         {
           "name": "Audacity",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Audacity is a free and open-source digital audio editor and recording application software, available for Windows, macOS, Linux, and other Unix-like operating systems.",
           "link": "https://www.audacityteam.org/"
         },
         {
           "name": "WAX",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Wax is a high performance and flexible video compositing and special effects software. The idea for Wax is to be very general purpose and flexible in video compositing and effects, so that you can compose your dream video sequence with ease everytime.",
           "link": "https://www.debugmode.com/wax/"
         }
       ]
@@ -89,12 +89,12 @@
       "children": [
         {
           "name": "7-zip",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as \"archives\".",
           "link": "https://www.7-zip.org/download.html"
         },
         {
           "name": "WinRAR",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "WinRAR is a powerful archiver extractor tool, and can open all popular file formats. RAR and WinRAR are Windows 10 (TM) compatible ; available in over 50 languages and in both 32-bit and 64-bit; compatible with several operating systems (OS), and it is the only compression software that can work with Unicode.",
           "link": "https://www.win-rar.com/predownload.html?&L=0"
         }
       ]
@@ -105,17 +105,17 @@
       "children": [
         {
           "name": "Notepad++",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Notepad++ is a text and source code editor for use with Microsoft Windows. It supports tabbed editing, which allows working with multiple open files in a single window. ",
           "link": "https://notepad-plus-plus.org/downloads/"
         },
         {
           "name": "Ketarin",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Ketarin is a small application which automatically updates setup packages. As opposed to other tools, Ketarin is not meant to keep your system up-to-date, but rather to maintain a compilation of all important setup packages which can then be burned to disc or put on a USB stick.",
           "link": "http://ketarin.canneverbe.com/"
         },
         {
           "name": "Open Office",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Apache OpenOffice is the leading open-source office software suite for word processing, spreadsheets, presentations, graphics, databases and more. It is available in many languages and works on all common computers. It stores all your data in an international open standard format and can also read and write files from other common office software packages.",
           "link": "https://www.openoffice.org/download/index.html"
         }
       ]
@@ -126,22 +126,22 @@
       "children": [
         {
           "name": "FileZilla",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "FileZilla is a free and open-source, cross-platform FTP application, consisting of FileZilla Client and FileZilla Server. Clients are available for Windows, Linux, and macOS, servers are available for Windows only.",
           "link": "https://filezilla-project.org/"
         },
         {
           "name": "Defragler",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Defraggler speeds up your PC by assembling fragmented files on your machine and organizing them more efficiently. Defraggler does the hard work, so your computer doesn’t have to.",
           "link": "https://www.ccleaner.com/defraggler/download"
         },
         {
           "name": "CCleaner",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "CCleaner, developed by Piriform, is a utility used to clean potentially unwanted files and invalid Windows Registry entries from a computer.",
           "link": "https://www.ccleaner.com/ccleaner/download"
         },
         {
           "name": "Create Synchronicity",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Create Synchronicity is a powerful and lightweight open source backup and synchronization program, available in many languages.",
           "link": "http://synchronicity.sourceforge.net/"
         }
       ]
@@ -152,12 +152,12 @@
       "children": [
         {
           "name": "Bullzip PDF",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Create PDF documents from Windows applications - Convert Microsoft Access databases to MySQL. Supports Citrix MetaFrame, Windows Terminal Server, Windows 7 and Windows Vista, 2003, 2000, and NT 4.0. Works with 64 bit systems.",
           "link": "https://www.bullzip.com/products/pdf/download.php"
         },
         {
           "name": "Foxit Reader",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Foxit Reader is a multilingual freemium PDF tool that can create, view, edit, digitally sign, and print PDF files. Foxit Reader is developed by Fuzhou, China-based Foxit Software.",
           "link": "https://www.foxitsoftware.com/pdf-reader/"
         }
       ]
@@ -168,12 +168,12 @@
       "children": [
         {
           "name": "Advast Antivirus",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Avast Antivirus Download Center. Protect your Windows 10 PC against viruses, ransomware, spyware, and other types of malware with Avast Free Antivirus. Used by more than 400 million people around the world, our free antivirus is fully compatible with Windows 10 and 8.1.",
           "link": "https://www.avast.com/en-nz/index"
         },
         {
           "name": "Malwarebytes",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Malwarebytes protects you against malware, ransomware, malicious websites, and other advanced online threats that have made traditional antivirus obsolete and ineffective.",
           "link": "https://www.malwarebytes.com/"
         }
       ]
@@ -184,7 +184,7 @@
       "children": [
         {
           "name": "Team Viewer",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "TeamViewer is remote access and remote control computer software, allowing maintenance of computers and other devices. It was first released in 2005, and its functionality has expanded step by step.",
           "link": "https://www.teamviewer.com/en/"
         }
       ]
@@ -195,7 +195,7 @@
       "children": [
         {
           "name": "Classic Shell",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor vitae purus faucibus ornare. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam.",
+          "description": "Classic Shell is a computer software for Microsoft Windows that provides user interface elements intended to restore familiar features from past versions of Windows.",
           "link": "http://www.classicshell.net/"
         }
       ]
