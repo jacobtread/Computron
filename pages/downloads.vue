@@ -71,7 +71,7 @@ export default {
       const element: HTMLElement = elements[i] as HTMLElement;
       const category: string = element.getAttribute("data-category")!;
       const target: HTMLElement = document.querySelector(`#${category}`)!;
-      element.onclick = () => target.scrollIntoView({ behavior: "smooth" });
+      element.onclick = () => target.scrollIntoView();
     }
   },
 };

@@ -9,23 +9,23 @@ export default {
     const footer: HTMLElement = document.getElementById("footer")!;
     const topButton: HTMLElement = document.getElementById("topButton")!;
     // Add a new listener for when the button is
-    topButton.onclick = () =>
+    topButton.onclick = () => {
       // Scroll to the page top smoothly
-      window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+      window.scrollTo({ left: 0, top: 0 });
+    };
     const updateButton = () => {
       const { innerHeight, scrollY } = window;
       const { documentElement, body } = document;
       // Caculates if the footer element is within the page
       const footerVisible: boolean =
-        innerHeight + scrollY >=
-        body.offsetHeight - footer.offsetHeight;
+        innerHeight + scrollY >= body.offsetHeight - footer.offsetHeight;
       // Calculates if the document scroll is more than half the window height
       const passedHalfHeight = documentElement.scrollTop > innerHeight / 2;
       /* 
-        Determines whether or not to display the button.
-        In this case the screen must be scrolled at least half the 
-        window height and the page footer must not be within view
-      */
+          Determines whether or not to display the button.
+          In this case the screen must be scrolled at least half the 
+          window height and the page footer must not be within view
+        */
       const shouldDisplay: boolean = !footerVisible && passedHalfHeight;
       // Toggle the active class if should be displayed
       topButton.classList.toggle("button--top--active", shouldDisplay);
