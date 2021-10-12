@@ -41,7 +41,7 @@
       remotely this tutorial is intended to be followed before contacting us in
       order to help speed up the process of us helping you
       <template #buttons>
-        <NuxtLink to="/support" class="button"> Get Support </NuxtLink>
+        <NuxtLink to="/tutorials/support-setup" class="button"> Get Support </NuxtLink>
       </template>
     </TextBlock>
   </div>
