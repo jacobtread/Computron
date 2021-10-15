@@ -25,7 +25,8 @@ jobs:
 
       - name: Generate
         run: yarn run generate
-
+        env: 
+            GITHUB_PAGES: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
