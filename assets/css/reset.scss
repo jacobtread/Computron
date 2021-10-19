@@ -354,10 +354,20 @@ template {
     display: none;
 }
 
+
+
+/**
+ * Changing default scroll behavior to smooth
+ */
+
 html {
   scroll-behavior: smooth;
 }
 
+
+/**
+ * Reset scroll behavior if user prefers reduced motion
+ */
 
 @media (prefers-reduced-motion: reduce) {
   html {

@@ -13,6 +13,8 @@
 </template>
 
 <script lang="ts">
+import "~/assets/css/global.scss"; // Import the global stylesheet
+
 import Header from "~/components/Header.vue"; // Import the Header component
 import Footer from "~/components/Footer.vue"; // Import the Footer component
 import TopButton from "~/components/TopButton.vue"; // Import the TopButton component
@@ -22,8 +24,3 @@ export default {
   components: { Footer, Header, TopButton },
 };
 </script>
-
-<style lang="scss">
-// Imports the global stylesheet for global styles
-@import "~/assets/css/global";
-</style>
