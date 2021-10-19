@@ -1,3 +1,5 @@
+const description = 'Computron offers computer/networking repairs, Helpful download links to everyday software, and provides training for computers & applications';
+
 export default {
   target: 'static', // Deploy the content as static html
   head: {
@@ -19,7 +21,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Computron offers computer/networking repairs, Helpful download links to everyday software, and provides training for computers & applications'
+        content: description
       },
       { name: 'keywords', content: 'computers,networking,repairs,software,downloads,training' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -28,13 +30,18 @@ export default {
       { name: 'og:type', content: 'website' },
       {
         name: 'og:description',
-        content: 'Computron offers computer/networking repairs, Helpful download links to everyday software, and provides training for computers & applications'
-      }
+        content: description
+      },
+      { name: 'theme-color', content: '#4a73c9' },
     ],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', sizes: "32x32", href: "/favicon-32x32.png" },
+      { rel: 'icon', type: 'image/png', sizes: "16x16", href: "/favicon-16x16.png" },
+      { rel: 'apple-touch-icon', type: 'image/png', sizes: "180x180", href: "/apple-touch-icon.png" },
+      { rel: 'manifest', href: "/site.webmanifest" },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: true },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' }
     ]
   },
