@@ -48,7 +48,5 @@
 </template>
 
 <script>
-import TextBlock from "~/components/TextBlock";
-
-export default { components: { TextBlock } };
+export default {};
 </script>

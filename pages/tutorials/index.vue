@@ -17,10 +17,8 @@
 
 <script lang="ts">
 import { Context } from "@nuxt/types";
-import TextBlock from "~/components/TextBlock.vue"; // Import the text block component
 
 export default {
-  components: { TextBlock },
   // Handle asynchronously fetched data
   async asyncData(c: Context /* The nuxt context */) {
     const $content = c.$content;

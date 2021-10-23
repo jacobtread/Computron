@@ -15,12 +15,5 @@
 <script lang="ts">
 import "~/assets/css/global.scss"; // Import the global stylesheet
 
-import Header from "~/components/Header.vue"; // Import the Header component
-import Footer from "~/components/Footer.vue"; // Import the Footer component
-import TopButton from "~/components/TopButton.vue"; // Import the TopButton component
-
-export default {
-  // Specify the components that are being used
-  components: { Footer, Header, TopButton },
-};
+export default {};
 </script>

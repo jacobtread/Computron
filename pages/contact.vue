@@ -37,8 +37,5 @@
   </div>
 </template>
 <script>
-// Import the text block component
-import TextBlock from "~/components/TextBlock.vue";
-
-export default { components: { TextBlock } }; // Use the text block component
+export default {};
 </script>

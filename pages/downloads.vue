@@ -53,10 +53,8 @@
 
 <script lang="ts">
 import { Context } from "@nuxt/types";
-import TextBlock from "~/components/TextBlock.vue";
 
 export default {
-  components: { TextBlock },
   // Method for providing data when being server-side rendered
   async asyncData(c: Context /* The nuxt context */) {
     // Fetch the data using nuxt content and use it as data
